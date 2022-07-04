@@ -17,6 +17,7 @@ class AdminController extends Controller
     {
         $jurusan = Jurusan::all();
         $gelombang = Gelombang::first();
+      
         $smp = Smp::all();
 
         if($gelombang == null){
@@ -49,6 +50,7 @@ class AdminController extends Controller
     public function kirim_data(Request $req)
     {
         $req->validate([
+            'gelombang' => 'required',
             'jurusan' => 'required',
             'nama_siswa' => 'required',
             'tempat_lahir' => 'required',
@@ -76,6 +78,61 @@ class AdminController extends Controller
             'alamat'        => $req->input('alamat'),
         ]);
         return redirect()->back()->with('success', 'Sukses Menambahkan Siswa');
+    }
+    public function pendaftar()
+    {
+        $data_pendaftar = Pendaftar::orderBy('id', 'DESC')->where('acc', '0')->where('daful', '0')->get();
+        $data_acc       = Pendaftar::orderBy('id', 'DESC')->where('acc', '1')->get();
+        $belum_daful    = Pendaftar::orderBy('id', 'DESC')->where('acc', '1')->where('daful', '0')->get();
+        $sudah_daful    = Pendaftar::orderBy('id', 'DESC')->where('acc', '1')->where('daful', '1')->get();
+        
+        return view('Dashboard/pendaftar/pendaftar', compact('data_pendaftar', 'data_acc', 'belum_daful', 'sudah_daful'));
+    }
+
+    public function acc($id)
+    {
+        $data = Pendaftar::find($id)->update([
+            'acc' => 1
+        ]);
+        return redirect()->back()->with('success', 'Siswa Telah Di Acc');
+
+    }
+
+    
+    public function daful($id)
+    {
+        $data = Pendaftar::find($id)->update([
+            'daful' => 1
+        ]);
+        return redirect()->back()->with('success', 'Siswa Telah Daftar Ulang');
+
+    }
+
+
+    public function lihat($id)
+    {
+        $data = Pendaftar::find($id);
+        return view('Dashboard/pendaftar/lihat', compact('data'));
+    }
+
+    public function hapus_siswa($id)
+    {
+        $data = Pendaftar::find($id)->delete();
+        return redirect()->back()->with('success', 'Data Siswa Berhasil Di Hapus');
+    }
+
+    public function acc_massal(Request $req)
+    {
+        $cek = Pendaftar::where('gelombang', $req->gelombang)->first();
+        if($cek == NULL){
+            return redirect()->back()->with('error', 'Gelombang Tersebut Belum Ada');
+        }else{
+            $data = Pendaftar::where('gelombang', $req->gelombang)->update([
+                'acc' => 1
+            ]);
+            return redirect()->back()->with('success', 'Gelombang Tersebut Telah Di Acc');
+        }
+      
     }
 
     // SEKOLAH

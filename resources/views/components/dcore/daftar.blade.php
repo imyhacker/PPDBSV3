@@ -7,7 +7,7 @@
     </div>
     <div class="col-md-6 mt-3">
         <label>Gelombang</label>
-        <input type="text" value="{{$gelombang->gelombang ?? 'Belum Ada Gelombang'}}" name="gelombang" class="form-control" disabled>
+        <input type="text" value="{{$gelombang->gelombang ?? 'Belum Ada Gelombang'}}" name="gelombang" class="form-control disabl" readonly>
     </div>
     <div class="col-md-6 mt-3">
         <label>Status Gelombang</label>

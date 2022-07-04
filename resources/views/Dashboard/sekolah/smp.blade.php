@@ -15,14 +15,14 @@
                 <div class="card-header">
                   <h4>Daftar Nama SMP</h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body table-responsive">
                     <div class="row">
                         <div class="col-md-12">
                             <button class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#modalSmp"><i class="fas fa-upload"></i> Upload SMP</button>
                             <a class="btn btn-outline-danger btn-block mt-3" href="{{route('reset_smp')}}"><i class="fas fa-stop"></i> Hapus Semua Data SMP</a>
                         </div>
                         <div class="col-md-12 mt-4">
-                            <table class="table" id="table_smp">
+                            <table class="table" id="data_sekolah">
                                 <thead>
                                     <tr>
                                         <th>No</th>

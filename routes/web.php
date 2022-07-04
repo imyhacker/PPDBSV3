@@ -27,6 +27,13 @@ Route::group(['prefix' => 'home/pendaftaran'], function($id = null){
     Route::get('daftar_admin', [AdminController::class, 'daftar_admin'])->name('daftar_admin');
     Route::post('daftar_admin/kirim_data', [AdminController::class, 'kirim_data'])->name('kirim_data');
 
+    Route::get('pendaftar', [AdminController::class, 'pendaftar'])->name('pendaftar');
+    Route::get('pendaftar/{id}/lihat', [AdminController::class, 'lihat'])->name('lihat', $id);
+    Route::get('pendaftar/{id}/hapus_siswa', [AdminController::class, 'hapus_siswa'])->name('hapus_siswa', $id);
+    Route::get('pendaftar/{id}/acc', [AdminController::class, 'acc'])->name('acc', $id);
+    Route::get('pendaftar/{id}/daful', [AdminController::class, 'daful'])->name('daful', $id);
+    Route::post('pendaftar/acc_massal', [AdminController::class, 'acc_massal'])->name('acc_massal');
+
     Route::get('cari_smp', [AdminController::class, 'cari_smp'])->name('cari_smp');
 });
 

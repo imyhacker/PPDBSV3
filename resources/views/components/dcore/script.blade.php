@@ -22,7 +22,17 @@
   <script src="https://demo.getstisla.com/assets/js/scripts.js"></script>
   <script src="https://demo.getstisla.com/assets/js/custom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready( function () {
+    $('#data_pendaftar').DataTable();
+    $('#data_acc').DataTable();
+    $('#belum_daful').DataTable();
+    $('#sudah_daful').DataTable();
+    $('#data_sekolah').DataTable();
 
+    });
+  </script>
   <script>
         $(document).ready(function() {
             // Select2 Multiple

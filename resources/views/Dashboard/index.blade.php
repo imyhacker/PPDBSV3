@@ -7,18 +7,16 @@
       <x-dcore.alert />
       <div class="main-content">
         <section class="section">
-        <x-dcore.card />
+        <x-dcore.card :g1="$g1" :g2="$g2" :g3="$g3" :g4="$g4" :bdf="$bdf" :sdf="$sdf"/>
 
         <!-- MAIN OF CENTER CONTENT -->
           <div class="row">
             <div class="col-lg-12">
               <div class="card">
-                <div class="card-header">
-                  <h4>Budget vs Sales</h4>
-                </div>
-                <div class="card-body">
-                  <canvas id="myChart" height="158"></canvas>
-                </div>
+               
+                <div class="card-body d-flex justify-content-center">
+                <h3>Selamat Datang Di Aplikasi PPDB SMKTI Rev.3.0.0 - 2022</h3>
+              </div>
               </div>
             </div>
             
