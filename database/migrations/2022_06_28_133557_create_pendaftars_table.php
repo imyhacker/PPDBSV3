@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             // Gelombang
             $table->string('gelombang')->nullable();
+            $table->string('jurusan')->nullable();
             
             // Data siswa
             $table->string('nama_siswa');
@@ -36,6 +37,12 @@ return new class extends Migration
             $table->string('hp_ibu')->nullable();
             $table->string('hp_siswa')->nullable();
             $table->string('rekomendasi')->nullable();
+            $table->longText('alamat')->nullable();
+
+            // ACC 
+            $table->string('acc')->default(0)->nullable();
+            $table->string('daful')->default(0)->nullable();
+
             $table->timestamps();
         });
     }

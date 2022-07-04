@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Excel;
+use App\Models\Smp;
 use App\Models\Jurusan;
 use App\Models\Gelombang;
+use App\Models\Pendaftar;
 use App\Imports\smpimport;
-use App\Models\Smp;
 use Illuminate\Http\Request;
-use Excel;
 
 class AdminController extends Controller
 {
@@ -17,8 +18,21 @@ class AdminController extends Controller
         $jurusan = Jurusan::all();
         $gelombang = Gelombang::first();
         $smp = Smp::all();
+
+        if($gelombang == null){
+            $form = 'disabled';
+            $button = 'type="button"';
+            $name = '';
+        }elseif($gelombang->status_gelombang == 'Tutup'){
+            $form = 'disabled';
+            $button = 'type="button"';
+            $name = '';
+        }elseif($gelombang->status_gelombang == 'Buka'){
+            $form = '';
+            $button = 'type="submit"';
+        }
     
-        return view('Dashboard/pendaftar/daftar', compact('jurusan', 'gelombang', 'smp'));
+        return view('Dashboard/pendaftar/daftar', compact('jurusan', 'gelombang', 'smp', 'form', 'button'));
     }
     public function cari_smp(Request $req)
     {
@@ -32,6 +46,38 @@ class AdminController extends Controller
         return response()->json($data);
     }
 
+    public function kirim_data(Request $req)
+    {
+        $req->validate([
+            'jurusan' => 'required',
+            'nama_siswa' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'asal_sekolah' => 'required',
+            'agama' => 'required',
+        ]);
+
+        $data = Pendaftar::create([
+            'gelombang'     => $req->input('gelombang'),
+            'jurusan'       => $req->input('jurusan'),
+            'nama_siswa'    => $req->input('nama_siswa'),
+            'tempat_lahir'  => $req->input('tempat_lahir'),
+            'tanggal_lahir' => $req->input('tanggal_lahir'),
+            'asal_sekolah'  => $req->input('asal_sekolah'),
+            'agama'         => $req->input('agama'),
+            'nama_ayah'     => $req->input('nama_ayah'),
+            'nama_ibu'      => $req->input('nama_ibu'),
+            'status_ayah'   => $req->input('status_ayah'),
+            'status_ibu'    => $req->input('status_ibu'),
+            'hp_ayah'       => $req->input('hp_ayah'),
+            'hp_ibu'        => $req->input('hp_ibu'),
+            'hp_siswa'      => $req->input('hp_siswa'),
+            'rekomendasi'   => $req->input('rekomendasi'),
+            'alamat'        => $req->input('alamat'),
+        ]);
+        return redirect()->back()->with('success', 'Sukses Menambahkan Siswa');
+    }
+
     // SEKOLAH
 
     public function add_jurusan(Request $req)
@@ -43,7 +89,12 @@ class AdminController extends Controller
     }
     public function add_gelombang(Request $req)
     {
+        $req->validate([
+            'gelombang' => 'required',
+            'status_gelombang' => 'required'
+        ]);
         $data = Gelombang::first();
+        
         if($data == NULL){
             $data = Gelombang::create([
                 'gelombang' => $req->gelombang,

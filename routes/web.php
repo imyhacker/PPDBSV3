@@ -25,6 +25,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::group(['prefix' => 'home/pendaftaran'], function($id = null){
     Route::get('daftar_admin', [AdminController::class, 'daftar_admin'])->name('daftar_admin');
+    Route::post('daftar_admin/kirim_data', [AdminController::class, 'kirim_data'])->name('kirim_data');
+
     Route::get('cari_smp', [AdminController::class, 'cari_smp'])->name('cari_smp');
 });
 
