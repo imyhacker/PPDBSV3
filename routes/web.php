@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,8 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => '/'], function(){
+    Route::get('/', [ClientController::class, 'index'])->name('/');
 });
 
 Auth::routes();
@@ -34,15 +35,9 @@ Route::group(['prefix' => 'home/pendaftaran'], function($id = null){
     Route::get('pendaftar/{id}/daful', [AdminController::class, 'daful'])->name('daful', $id);
     Route::post('pendaftar/acc_massal', [AdminController::class, 'acc_massal'])->name('acc_massal');
 
-    Route::get('cari_smp', [AdminController::class, 'cari_smp'])->name('cari_smp');
 });
 
 Route::group(['prefix' => 'home/sekolah'], function($id = null){
     Route::post('/add_jurusan', [AdminController::class, 'add_jurusan'])->name('add_jurusan');
     Route::post('/add_gelombang', [AdminController::class, 'add_gelombang'])->name('add_gelombang');
-    Route::get('/sekolah_smp', [AdminController::class, 'sekolah_smp'])->name('sekolah_smp');
-
-    Route::post('/sekolah_smp/upload_smp', [AdminController::class, 'upload_smp'])->name('upload_smp');
-    Route::get('/sekolah_smp/{id}/hapus_smp', [AdminController::class, 'hapus_smp'])->name('hapus_smp', $id);
-    Route::get('/sekolah_smp/reset_smp', [AdminController::class, 'reset_smp'])->name('reset_smp');
 });

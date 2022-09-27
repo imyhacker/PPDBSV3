@@ -69,30 +69,3 @@
   </div>
 </div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="modalSmp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Upload Excel Data SMP</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form action="{{route('upload_smp')}}" method="POST" enctype="multipart/form-data">
-        @csrf
-      
-      <div class="modal-body">
-        <div class="form-group">
-          <input type="file" class="form-control-file" name="file">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Upload SMP</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div>

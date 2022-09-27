@@ -33,16 +33,6 @@
 
     });
   </script>
-  <script>
-        $(document).ready(function() {
-            // Select2 Multiple
-            $('#select2Multiple').select2({
-                placeholder: "Pilih Asal Sekolah SMP / MTSn / MTS",
-                allowClear: false
-            });
-
-        });
-
-    </script>
+  
 </body>
 </html>

@@ -30,7 +30,6 @@
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="#" data-toggle="modal" data-target="#modalJurusan">Jurusan</a></li>
                 <li><a class="nav-link" href="#" data-toggle="modal" data-target="#modalGelombang">Gelombang</a></li>
-                <li><a class="nav-link" href="{{route('sekolah_smp')}}">Sekolah SMP</a></li>
                 <li><a class="nav-link" href="">Profil Jurusan</a></li>
                 <li><a class="nav-link" href="">Galeri Sekolah</a></li>
                 <li><a class="nav-link" href="">Informasi</a></li>

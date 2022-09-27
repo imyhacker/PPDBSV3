@@ -15,7 +15,7 @@
                   <h4>Budget vs Sales</h4>
                 </div>
                 <div class="card-body">
-                  <x-dcore.daftar :jurusan="$jurusan" :gelombang="$gelombang" :smp="$smp" :form="$form" :button="$button"/>
+                  <x-dcore.daftar :jurusan="$jurusan" :gelombang="$gelombang" :form="$form" :button="$button"/>
                 </div>
               </div>
             </div>

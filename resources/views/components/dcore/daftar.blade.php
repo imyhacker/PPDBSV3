@@ -51,14 +51,9 @@
     </div>
     <div class="col-md-6 mt-3">
         <label>Asal Sekolah <sup class="text-danger">*</sup></label>
-        <select class="form-control @error('asal_sekolah') is-invalid @enderror"
-                id="select2Multiple" style="width:100%!important;" {{$form}} @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="asal_sekolah" @endif>
-                <option disabled selected value>Pilih Asal Sekolah</option>
-                @foreach($smp as $s)
-                <option value="{{$s->smp}}">{{$s->smp}}</option>  
-                @endforeach           
-              </select>
-              @error('asal_sekolah')
+        <input type="text" class="form-control @error('asal_sekolah') is-invalid @enderror" placeholder="Asal Sekolah SMP"  @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="asal_sekolah" @endif>
+
+        @error('asal_sekolah')
         <div class="invalid-feedback">{{$message}}</div>
         @enderror
     </div>
@@ -128,7 +123,7 @@
     </div>
     <div class="col-md-12 mt-3">
         <label>Alamat</label>
-        <textarea name="" class="form-control" placeholder="Alamat Lengkap Beserta RT & RW" {{$form}} @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="alamat" @endif cols="30" rows="10"></textarea>
+        <textarea name="alamat" class="form-control" placeholder="Alamat Lengkap Beserta RT & RW" {{$form}} @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="alamat" @endif cols="30" rows="10"></textarea>
     </div>
       <div class="col-md-12 mt-3">
         <input {{$form}} @if($gelombang == null) class="btn btn-outline-danger btn-block" value="Belum Di Buka!" @elseif($gelombang->status_gelombang == 'Buka')  class="btn btn-outline-success btn-block" value="Kirim Datamu!" type="submit" @endif 
