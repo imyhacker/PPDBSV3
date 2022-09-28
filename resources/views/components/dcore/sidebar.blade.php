@@ -30,10 +30,11 @@
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="#" data-toggle="modal" data-target="#modalJurusan">Jurusan</a></li>
                 <li><a class="nav-link" href="#" data-toggle="modal" data-target="#modalGelombang">Gelombang</a></li>
-                <li><a class="nav-link" href="">Profil Jurusan</a></li>
+                <li><a class="nav-link" href="{{route('informasi_slide')}}">Informasi Slide</a></li>
+                <li><a class="nav-link" href="{{route('informasi_sekolah')}}">Informasi Sekolah</a></li>
+                <li><a class="nav-link" href="{{route('tentang_sekolah')}}">Tentang Sekolah</a></li>
                 <li><a class="nav-link" href="">Galeri Sekolah</a></li>
-                <li><a class="nav-link" href="">Informasi</a></li>
-      
+                <li><a class="nav-link" href="">Testimoni</a></li>
               </ul>
             </li>
           </ul>

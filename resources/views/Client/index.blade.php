@@ -15,7 +15,7 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <x-client.carousel />
+    <x-client.carousel :slide="$slide"/>
     <!-- Carousel End -->
 
     <!-- About Start -->
@@ -23,7 +23,7 @@
     <!-- About End -->
 
     <!-- Facts Start -->
-    <x-client.facts />
+    <x-client.facts  :tentang="$tentang"/>
     <!-- Facts End -->
 
     <!-- Features Start -->
@@ -31,7 +31,7 @@
     <!-- Features End -->
 
     <!-- Service Start -->
-   <x-client.service />
+   <x-client.service :info="$info"/>
     <!-- Service End -->
 
     <!-- Appointment Start -->
@@ -39,7 +39,7 @@
     <!-- Appointment End -->
 
     <!-- Team Start -->
-    <x-client.team />
+    
     <!-- Team End -->
 
     <!-- Testimonial Start -->

@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('smp', function (Blueprint $table) {
+        Schema::create('slider', function (Blueprint $table) {
             $table->id();
-            $table->string('smp');
+            $table->longText('wallpaper');
+            $table->string('judul');
+            $table->longText('deskripsi_slider');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('smp');
+        Schema::dropIfExists('slider');
     }
 };

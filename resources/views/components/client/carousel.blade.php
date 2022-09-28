@@ -1,48 +1,55 @@
 <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
+        @forelse($slide as $key => $slider)
+        <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
+          <img class="w-100" src="{{asset('slide/'.$slider->wallpaper)}}" alt="Image" style="filter: blur(4px);" />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h1 class="display-3 text-dark mb-4 animated slideInDown" style="text-shadow: 0 0 4px #ffffff, 0 0 5px #ffffff;">
+                    {{$slider->judul}}
+                  </h1>
+                  <p class="fs-5 text-warning mb-5" style="text-shadow: 0 0 2px red, 0 0 2px blue;">
+                    {{$slider->deskripsi_slider}}
+                  </p>
+                  <a href="" class="btn btn-primary py-3 px-5"
+                    >Daftar Disini</a
+                  >
+                  <a href="" class="btn btn-info py-3 px-5"
+                    >Cek Disini</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @empty
         <div class="carousel-item active">
-          <img class="w-100" src="{{asset('img/carousel-1.jpg')}}" alt="Image" />
+          <img class="w-100" src="{{asset('default/guru.jpg')}}" alt="Image" style="filter: blur(4px);" />
           <div class="carousel-caption">
             <div class="container">
               <div class="row">
                 <div class="col-12 col-lg-6">
-                  <h1 class="display-3 text-dark mb-4 animated slideInDown">
-                    Insurance Creates Wealth For Everyone
+                  <h1 class="display-3 text-dark mb-4 animated slideInDown" style="text-shadow: 0 0 4px #ffffff, 0 0 5px #ffffff;">
+                    {{"SMK Telematika Indramayu"}}
                   </h1>
-                  <p class="fs-5 text-body mb-5">
-                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                    duo justo magna dolore erat amet
+                  <p class="fs-5 text-light mb-5" style="text-shadow: 0 0 2px red, 0 0 2px blue;">
+                    {{"Pilihan Cerdas Generasi Emas !"}}
                   </p>
                   <a href="" class="btn btn-primary py-3 px-5"
-                    >More Details</a
+                    >Daftar Disini <i class="fas fa-arrow-right"></i></a
+                  >
+                  <a href="" class="btn btn-dark py-3 px-5"
+                    >Cek Data Disini <i class="fas fa-arrow-right"></i></a
                   >
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="w-100" src="{{asset('img/carousel-2.jpg')}}" alt="Image" />
-          <div class="carousel-caption">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <h1 class="display-3 text-dark mb-4 animated slideInDown">
-                    The Best Insurance Begins Here
-                  </h1>
-                  <p class="fs-5 text-body mb-5">
-                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                    duo justo magna dolore erat amet
-                  </p>
-                  <a href="" class="btn btn-primary py-3 px-5"
-                    >More Details</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       @endforelse
       </div>
       <button
         class="carousel-control-prev"

@@ -40,4 +40,15 @@ Route::group(['prefix' => 'home/pendaftaran'], function($id = null){
 Route::group(['prefix' => 'home/sekolah'], function($id = null){
     Route::post('/add_jurusan', [AdminController::class, 'add_jurusan'])->name('add_jurusan');
     Route::post('/add_gelombang', [AdminController::class, 'add_gelombang'])->name('add_gelombang');
+    Route::get('/informasi_slide', [AdminController::class, 'informasi_slide'])->name('informasi_slide');    
+    Route::post('/informasi_slide/post', [AdminController::class, 'post_slide'])->name('post_slide');
+    Route::get('/informasi_slide/{id}/hapus_slide', [AdminController::class, 'hapus_slide'])->name('hapus_slide', $id);
+
+    Route::get('/tentang_sekolah', [AdminController::class, 'tentang_sekolah'])->name('tentang_sekolah');
+    Route::post('/tentang_sekolah/post', [AdminController::class, 'upload_tentang_sekolah'])->name('upload_tentang_sekolah');
+
+    Route::get('/informasi_sekolah', [AdminController::class, 'informasi_sekolah'])->name('informasi_sekolah');
+    Route::post('/informasi_sekolah/post', [AdminController::class, 'upload_informasi'])->name('upload_informasi');
+
+    Route::get('/informasi_sekolah/{id}/hapus_informasi', [AdminController::class, 'hapus_informasi'])->name('hapus_informasi', $id);
 });

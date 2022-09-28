@@ -2,11 +2,9 @@
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <h1 class="display-6 mb-5">Few Reasons Why People Choosing Us!</h1>
+          <h1 class="display-6 mb-5">Kenapa Harus Di SMK Telematika Indramayu ?</h1>
           <p class="mb-4">
-            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-            lorem sit clita duo justo magna dolore erat amet
+            Karena Di SMK Telematika Indramayu adalah sekolah yang hanya memiliki 1 jurusan yaitu Teknik Komputer dan Jaringan yang lebih condong ke teknik Jaringan dan Informatika.
           </p>
           <div class="row g-3">
             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
@@ -16,10 +14,10 @@
                 >
                   <img
                     class="align-self-center mb-3"
-                    src="img/icon/icon-06-primary.png"
+                    src="{{asset('img/icon/icon-04-primary.png')}}"
                     alt=""
                   />
-                  <h5 class="mb-0">Easy Process</h5>
+                  <h5 class="mb-0">Akreditasi A</h5>
                 </div>
               </div>
             </div>
@@ -30,10 +28,10 @@
                 >
                   <img
                     class="align-self-center mb-3"
-                    src="img/icon/icon-03-primary.png"
+                    src="{{asset('img/icon/icon-04-primary.png')}}"
                     alt=""
                   />
-                  <h5 class="mb-0">Fast Delivery</h5>
+                  <h5 class="mb-0">Guru Tersertifikasi</h5>
                 </div>
               </div>
             </div>
@@ -44,10 +42,10 @@
                 >
                   <img
                     class="align-self-center mb-3"
-                    src="img/icon/icon-04-primary.png"
+                    src="{{asset('img/icon/icon-04-primary.png')}}"
                     alt=""
                   />
-                  <h5 class="mb-0">Policy Controlling</h5>
+                  <h5 class="mb-0">Ruang LAB 1,2,3</h5>
                 </div>
               </div>
             </div>
@@ -58,10 +56,10 @@
                 >
                   <img
                     class="align-self-center mb-3"
-                    src="img/icon/icon-07-primary.png"
+                    src="{{asset('img/icon/icon-04-primary.png')}}"
                     alt=""
                   />
-                  <h5 class="mb-0">Money Saving</h5>
+                  <h5 class="mb-0">Free WiFi</h5>
                 </div>
               </div>
             </div>
@@ -73,8 +71,8 @@
             style="min-height: 400px"
           >
             <img
-              class="position-absolute w-100 h-100"
-              src="img/feature.jpg"
+              class="position-absolute w-100 h-90"
+              src="{{asset('default/osis.png')}}"
               alt=""
               style="object-fit: cover"
             />

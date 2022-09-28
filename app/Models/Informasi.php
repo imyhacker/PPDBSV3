@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Smp extends Model
+class Informasi extends Model
 {
     use HasFactory;
-    protected $table = 'smp';
+    protected $table = 'informasi';
     protected $guarded = [];
 }

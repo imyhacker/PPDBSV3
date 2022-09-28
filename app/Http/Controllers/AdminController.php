@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use Excel;
+use App\Models\Slider;
 use App\Models\Jurusan;
 use App\Models\Gelombang;
+use App\Models\Informasi;
 use App\Models\Pendaftar;
+use App\Models\Tentang;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -128,7 +131,8 @@ class AdminController extends Controller
     public function add_jurusan(Request $req)
     {
         $data = Jurusan::create([
-            'jurusan' => $req->jurusan
+            'jurusan' => $req->jurusan,
+            'deskripsi_jurusan' => $req->deskripsi_jurusan
         ]);
         return redirect()->back()->with('success', 'Sukses Menambahkan Jurusan');
     }
@@ -157,4 +161,60 @@ class AdminController extends Controller
         }
     }
     // 
+    public function informasi_slide()
+    {
+        $data = Slider::orderBy('id', 'DESC')->get();
+        return view('Dashboard/sekolah/slide', compact('data'));
+    }
+    public function post_slide(Request $req)
+    {
+       
+
+        $file = $req->file('wallpaper');
+ 
+		$nama_file = 'wallpaper_'.date('dmy').'_.'.$file->getClientOriginalExtension();
+ 
+      	        // isi dengan nama folder tempat kemana file diupload
+		$tujuan_upload = 'slide';
+		$file->move($tujuan_upload,$nama_file);
+ 
+        $data = Slider::create([
+            'judul' => $req->judul,
+            'wallpaper' => $nama_file,
+            'deskripsi_slider' => $req->deskripsi_slider,
+        ]);
+        return redirect()->back()->with('success', 'Sukses Menambah Slider');
+    }
+    public function hapus_slide($id)
+    {
+        $data = Slider::find($id)->delete();
+        return redirect()->back()->with('success', 'Sukses Menghapus Slider');
+
+    }
+    public function tentang_sekolah()
+    {
+        $data = Tentang::first();
+        return view('Dashboard/sekolah/tentang', compact('data'));
+    }
+    public function upload_tentang_sekolah(Request $req)
+    {
+        $data = Tentang::createOrUpdate($req->all());
+        return redirect()->back()->with('success', 'Sukses Upload Tentang Sekolah');
+
+    }
+    public function informasi_sekolah()
+    {
+        $data = Informasi::orderBy('id', 'DESC')->get();
+        return view('Dashboard/sekolah/informasi', compact('data'));
+    }
+    public function upload_informasi(Request $req)
+    {
+        $data = Informasi::create($req->all());
+        return redirect()->back()->with('success', 'Sukses Upload Informasi Sekolah');
+
+    }
+    public function hapus_informasi($id)
+    {
+        # code...
+    }
 }

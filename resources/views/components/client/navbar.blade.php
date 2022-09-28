@@ -3,9 +3,9 @@
       <h1 class="m-0">
         <img
           class="img-fluid me-3"
-          src="{{asset('img/icon/icon-02-primary.png')}}"
+          src="{{asset('img/icon/index.png')}}"
           alt=""
-        />Insure
+        />SMKTI
       </h1>
     </a>
     <button

@@ -1,19 +1,19 @@
 <div class="container-xxl py-5">
     <div class="container">
       <div class="text-center mx-auto" style="max-width: 500px">
-        <h1 class="display-6 mb-5">What They Say About Our Insurance</h1>
+        <h1 class="display-6 mb-5">Testimoni Alumni</h1>
       </div>
       <div class="row g-5">
         <div class="col-lg-3 d-none d-lg-block">
           <div class="testimonial-left h-100">
             <img
               class="img-fluid animated pulse infinite"
-              src="img/testimonial-1.jpg"
+              src="{{asset('default/ardi.jpg')}}"
               alt=""
             />
             <img
               class="img-fluid animated pulse infinite"
-              src="img/testimonial-2.jpg"
+              src="{{asset('default/rizky.jpg')}}"
               alt=""
             />
             <img
@@ -28,44 +28,51 @@
             <div class="testimonial-item text-center">
               <img
                 class="img-fluid rounded mx-auto mb-4"
-                src="img/testimonial-1.jpg"
+                src="{{asset('default/ardi.jpg')}}"
                 alt=""
               />
               <p class="fs-5">
-                Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                et labore et tempor diam tempor erat.
+                SMKTI SETARA DENGAN D3 PENGAJARANNYA.
               </p>
-              <h5>Client Name</h5>
-              <span>Profession</span>
+              <h5>Ardiansyah Em Habib</h5>
+              <span>IT Desain Grafis</span>
             </div>
             <div class="testimonial-item text-center">
               <img
                 class="img-fluid rounded mx-auto mb-4"
-                src="img/testimonial-2.jpg"
+                src="{{asset('default/rizky.jpg')}}"
                 alt=""
               />
               <p class="fs-5">
-                Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                et labore et tempor diam tempor erat.
+              Sekolah sejuta kenangan, dengan banyak cerita menarik dan ilmu yang bisa didapatkan.
               </p>
-              <h5>Client Name</h5>
-              <span>Profession</span>
+              <h5>Rizky Musthofa</h5>
+              <span>IT Programmer</span>
             </div>
             <div class="testimonial-item text-center">
               <img
                 class="img-fluid rounded mx-auto mb-4"
-                src="img/testimonial-3.jpg"
+                src="{{asset('default/ari.jpeg')}}"
                 alt=""
               />
               <p class="fs-5">
-                Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                et labore et tempor diam tempor erat.
+               Sekolah yang nyaman dengan guru guru yang sangat asik, membuat belajar menjadi lebih betah!
               </p>
-              <h5>Client Name</h5>
-              <span>Profession</span>
+              <h5>Ari Farhan</h5>
+              <span>IT Programmer</span>
+            </div>
+            <div class="testimonial-item text-center">
+              <img
+                class="img-fluid rounded mx-auto mb-4"
+                src="{{asset('default/lukmen.jpeg')}}"
+                alt=""
+              />
+              <p class="fs-5">
+                Yakin nggak mau lanjut ke smkti ?
+                Ilmu it yang ada di smkti terbaik se Indramayu loh. Gurunya pun bersahabat jadi tidak canggung untuk bertanya jika tidak bisa. Suasana sekolah nya pun sangat nyaman. Yok langsung join dan jadi bagian bari smkti.                
+              </p>
+              <h5>Lukman Hakim</h5>
+              <span>IT Graphic Desaigner</span>
             </div>
           </div>
         </div>
@@ -73,17 +80,17 @@
           <div class="testimonial-right h-100">
             <img
               class="img-fluid animated pulse infinite"
-              src="img/testimonial-1.jpg"
+              src="{{asset('default/ari.jpeg')}}"
               alt=""
             />
             <img
               class="img-fluid animated pulse infinite"
-              src="img/testimonial-2.jpg"
+              src="{{asset('default/lukmen.jpeg')}}"
               alt=""
             />
             <img
               class="img-fluid animated pulse infinite"
-              src="img/testimonial-3.jpg"
+              src="{{asset('default/ari.jpeg')}}"
               alt=""
             />
           </div>

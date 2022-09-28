@@ -16,6 +16,10 @@
             <label>Jurusan</label>
             <input type="text" name="jurusan" placeholder="Masukan Jurusan" class="form-control">
         </div>
+        <div class="form-group">
+          <label>Deskripsi Jurusan</label>
+          <textarea name="deskripsi_jurusan" class="form-control" id="konten" cols="30" rows="10"></textarea>
+      </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

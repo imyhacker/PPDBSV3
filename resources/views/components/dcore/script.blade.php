@@ -23,6 +23,20 @@
   <script src="https://demo.getstisla.com/assets/js/custom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="//cdn.ckeditor.com/4.19.1/full/ckeditor.js"></script>
+<script>
+    var konten = document.getElementById("konten");
+      CKEDITOR.replace(konten,{
+      language:'en-gb'
+    });
+    var konten2 = document.getElementById("konten2");
+      CKEDITOR.replace(konten2,{
+      language:'en-gb'
+    });
+    CKEDITOR.config.allowedContent = true;
+
+
+ </script>
   <script>
     $(document).ready( function () {
     $('#data_pendaftar').DataTable();

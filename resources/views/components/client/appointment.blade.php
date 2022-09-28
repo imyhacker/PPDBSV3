@@ -4,14 +4,10 @@ data-wow-delay="0.1s" >
   <div class="row g-5">
     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
       <h1 class="display-6 text-white mb-5">
-        We're Award Winning Insurance Company
+        Ayo Bergabung Bersama SMK Telematika Indramayu !
       </h1>
       <p class="text-white mb-5">
-        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
-        stet lorem sit clita duo justo magna dolore erat amet. Tempor erat
-        elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-        diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-        clita duo justo magna.
+        Ayo bergabung bersama kami di SMK Telematika Indramayu, dan menjadi bagian dari SMK Telematika Indramayu, belajar dengan para guru-guru hebat, belajar dengan para guru-guru yang sudah tersertifikasi dan, belajar dengan guru-guru yang sangat asik, Yuk bergabung bersama kami !
       </p>
       <div class="bg-white rounded p-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
@@ -20,7 +16,27 @@ data-wow-delay="0.1s" >
             src="img/profile.jpg"
             alt=""
           />
-          <h5 class="text-white mb-0">Call Us: +012 345 6789</h5>
+          <h5 class="text-white mb-0">Nurokhim: +012 345 6789</h5>
+        </div>
+      </div>
+      <div class="bg-white rounded p-3 mt-3">
+        <div class="d-flex align-items-center bg-primary rounded p-3">
+          <img
+            class="flex-shrink-0 rounded-circle me-3"
+            src="img/profile.jpg"
+            alt=""
+          />
+          <h5 class="text-white mb-0">Wining: +012 345 6789</h5>
+        </div>
+      </div>
+      <div class="bg-white rounded p-3 mt-3">
+        <div class="d-flex align-items-center bg-primary rounded p-3">
+          <img
+            class="flex-shrink-0 rounded-circle me-3"
+            src="img/profile.jpg"
+            alt=""
+          />
+          <h5 class="text-white mb-0">Mastuti: +012 345 6789</h5>
         </div>
       </div>
     </div>
@@ -78,7 +94,7 @@ data-wow-delay="0.1s" >
                   class="form-control"
                   placeholder="Leave a message here"
                   id="message"
-                  style="height: 80px"
+                  style="height: 375px"
                 ></textarea>
                 <label for="message">Message</label>
               </div>
