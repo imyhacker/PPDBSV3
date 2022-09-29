@@ -7,8 +7,8 @@
             <p class="text-light mb-5 text-justify">
               {{$tentang->deskripsi_singkat}}
             </p>
-            <a href="" class="align-self-start btn btn-secondary py-3 px-5"
-              >More Details</a
+            <a href="{{route('siapa_kami')}}" class="align-self-start btn btn-secondary py-3 px-5"
+              >Selengkapnya</a
             >
           </div>
         </div>
@@ -16,20 +16,20 @@
           <div class="h-100 px-4 pe-lg-0">
             <div class="row g-5">
               <div class="col-sm-6">
-                <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                <h1 class="display-5" data-toggle="counter-up">{{$jp}}</h1>
                 <p class="fs-5 text-primary">Pendaftar</p>
               </div>
               <div class="col-sm-6">
-                <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                <h1 class="display-5" data-toggle="counter-up">{{$jt}}</h1>
                 <p class="fs-5 text-primary">Terdaftar</p>
               </div>
               <div class="col-sm-6">
-                <h1 class="display-5" data-toggle="counter-up">1234</h1>
+                <h1 class="display-5" data-toggle="counter-up">{{$jj}}</h1>
                 <p class="fs-5 text-primary">Jurusan</p>
               </div>
               <div class="col-sm-6">
-                <h1 class="display-5" data-toggle="counter-up">1234</h1>
-                <p class="fs-5 text-primary">Team PPDB</p>
+                <h1 class="display-5" data-toggle="counter-up">3</h1>
+                <p class="fs-5 text-primary">Costumer Service</p>
               </div>
             </div>
           </div>

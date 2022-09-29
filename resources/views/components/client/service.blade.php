@@ -24,7 +24,7 @@
             <p class="mb-4">
              {{Str::limit($infor->deskripsi_informasi, 100, '.....')}}
             </p>
-            <a class="btn btn-light px-3" href="">Read More</a>
+            <a class="btn btn-light px-3" href="{{route('baca', $infor->id)}}">Read More</a>
           </div>
         </div>
         @empty

@@ -7,6 +7,14 @@
     <script src="{{asset('lib/waypoints/waypoints.min.js')}}"></script>
     <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
     <script src="{{asset('lib/counterup/counterup.min.js')}}"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="{{asset('js/main.js')}}"></script>
+
+    <script>
+        $(document).ready( function () {
+        $('#data_pendaftar').DataTable();
+       
+        });
+      </script>

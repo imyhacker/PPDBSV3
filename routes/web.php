@@ -16,8 +16,15 @@ use App\Http\Controllers\ClientController;
 |
 */
 
-Route::group(['prefix' => '/'], function(){
+Route::group(['prefix' => '/'], function($id = null){
     Route::get('/', [ClientController::class, 'index'])->name('/');
+    Route::get('/daftar', [ClientController::class, 'daftar'])->name('daftar');
+    Route::post('/daftar/yes', [ClientController::class, 'yes_daftar'])->name('yes_daftar');
+
+    Route::get('/cek', [ClientController::class, 'cek'])->name('cek');
+    Route::get('/siapa', [ClientController::class, 'siapa_kami'])->name('siapa_kami');
+    Route::get('/informasi', [ClientController::class, 'informasi'])->name('informasi');
+    Route::get('/informasi/{id}/baca', [ClientController::class, 'baca'])->name('baca', $id);
 });
 
 Auth::routes();

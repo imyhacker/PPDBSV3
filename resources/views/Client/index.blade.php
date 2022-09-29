@@ -23,7 +23,7 @@
     <!-- About End -->
 
     <!-- Facts Start -->
-    <x-client.facts  :tentang="$tentang"/>
+    <x-client.facts  :tentang="$tentang" :jp="$jp" :jt="$jt" :jj="$jj"/>
     <!-- Facts End -->
 
     <!-- Features Start -->

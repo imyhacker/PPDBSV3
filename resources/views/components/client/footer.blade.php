@@ -6,13 +6,12 @@ data-wow-delay="0.1s">
       <h1 class="text-white mb-4">
         <img
           class="img-fluid me-3"
-          src="img/icon/icon-02-light.png"
+          src="{{asset('img/icon/index.png')}}"
           alt=""
-        />Insure
+        />SMKTI
       </h1>
       <p>
-        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-        ipsum et lorem et sit, sed stet lorem sit clita
+        Ayo Bergabung Bersama Kami Jadi Bagian Dari Keluarga SMK Telematika Indramayu! <br> <i>Pilihan Cerdas Generasi Emas</i>
       </p>
       <div class="d-flex pt-2">
         <a class="btn btn-square me-1" href=""

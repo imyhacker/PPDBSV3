@@ -14,10 +14,10 @@
                   <p class="fs-5 text-warning mb-5" style="text-shadow: 0 0 2px red, 0 0 2px blue;">
                     {{$slider->deskripsi_slider}}
                   </p>
-                  <a href="" class="btn btn-primary py-3 px-5"
+                  <a href="{{route('daftar')}}" class="btn btn-primary py-3 px-5"
                     >Daftar Disini</a
                   >
-                  <a href="" class="btn btn-info py-3 px-5"
+                  <a href="{{route('cek')}}" class="btn btn-info py-3 px-5"
                     >Cek Disini</a
                   >
                 </div>
@@ -38,10 +38,10 @@
                   <p class="fs-5 text-light mb-5" style="text-shadow: 0 0 2px red, 0 0 2px blue;">
                     {{"Pilihan Cerdas Generasi Emas !"}}
                   </p>
-                  <a href="" class="btn btn-primary py-3 px-5"
+                  <a href="{{route('daftar')}}" class="btn btn-primary py-3 px-5"
                     >Daftar Disini <i class="fas fa-arrow-right"></i></a
                   >
-                  <a href="" class="btn btn-dark py-3 px-5"
+                  <a href="{{route('cek')}}" class="btn btn-dark py-3 px-5"
                     >Cek Data Disini <i class="fas fa-arrow-right"></i></a
                   >
                 </div>

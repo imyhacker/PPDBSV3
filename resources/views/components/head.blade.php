@@ -7,14 +7,14 @@
     <title>{{config('app.name')}}</title>
 
     <!-- General CSS Files -->
-    <link rel="stylesheet" href="https://demo.getstisla.com/assets/modules/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://demo.getstisla.com/assets/modules/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://technext.github.io/stisla-1/assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://technext.github.io/stisla-1/assets/modules/fontawesome/css/all.min.css">
 
     <!-- CSS Libraries -->
-    <link rel="stylesheet" href="https://demo.getstisla.com/assets/modules/jquery-selectric/selectric.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/lcdsantos/jQuery-Selectric/master/public/selectric.css">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="https://demo.getstisla.com/assets/css/style.css">
-    <link rel="stylesheet" href="https://demo.getstisla.com/assets/css/components.css">
+    <link rel="stylesheet" href="https://technext.github.io/stisla-1/assets/css/style.css">
+    <link rel="stylesheet" href="https://technext.github.io/stisla-1/assets/css/components.css">
 </head>
 <body>

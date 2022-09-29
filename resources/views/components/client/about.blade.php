@@ -4,7 +4,7 @@
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
           <div
             class="position-relative overflow-hidden rounded ps-5 pt-5 h-100"
-            style="min-height: 400px"
+            style="min-height: 500px"
           >
             <img
               class="position-absolute w-100 h-100"
