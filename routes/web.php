@@ -63,6 +63,6 @@ Route::group(['prefix' => 'home/sekolah'], function($id = null){
 
     Route::post('/galeri/upload_video', [AdminController::class, 'upload_video'])->name('upload_video');
 
-    Route::get('/galeri/{id}/hapus_foto'. [AdminController::class, 'hapus_foto'])->name('hapus_foto', $id);
+    Route::get('/galeri/{id}/hapus_foto', [AdminController::class, 'hapus_foto'])->name('hapus_foto', $id);
     Route::get('/galeri/{id}/hapus_video', [AdminController::class, 'hapus_video'])->name('hapus_video', $id);
 });
