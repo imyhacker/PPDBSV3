@@ -7,7 +7,7 @@
       </div>
       <div class="row g-4 justify-content-center">
         <div class="col-md-12 text-justify">
-           {!! $data->tentang !!}
+           {!! $data->tentang ?? 'Belum Ada Apapun' !!}
         </div>
       </div>
     </div>

@@ -46,6 +46,8 @@
     $('#belum_daful').DataTable();
     $('#sudah_daful').DataTable();
     $('#data_sekolah').DataTable();
+    $('#data_foto').DataTable();
+    $('#data_video').DataTable();
 
     });
   </script>

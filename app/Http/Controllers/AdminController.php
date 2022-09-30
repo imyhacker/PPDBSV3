@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use Excel;
+use App\Models\Foto;
+use App\Models\Youtube as YT;
 use App\Models\Slider;
 use App\Models\Jurusan;
+use App\Models\Tentang;
 use App\Models\Gelombang;
 use App\Models\Informasi;
 use App\Models\Pendaftar;
-use App\Models\Tentang;
 use Illuminate\Http\Request;
+use Alaouy\Youtube\Facades\Youtube;
+use FFI;
 
 class AdminController extends Controller
 {
@@ -214,6 +218,51 @@ class AdminController extends Controller
 
     }
     public function hapus_informasi($id)
+    {
+       $data = Informasi::find($id)->delete();
+       return redirect()->back()->with('success', 'Sukses Menghapus Informasi Sekolah');
+    }
+    public function galeri()
+    {
+        $foto = Foto::all();
+        $video = YT::all();
+        return view('Dashboard/sekolah/galeri', compact('foto', 'video'));
+    }
+
+    public function upload_foto(Request $req)
+    {
+        $file = $req->file('foto');
+        $nama_file = 'foto_'.date('d_m_y_s').'_.'.$file->getClientOriginalExtension();
+        $path = 'galeri';
+        $file->move($path, $nama_file);
+
+        $data = Foto::create([
+            'judul' => $req->input('judul'),
+            'foto'  => $nama_file
+        ]);
+        return redirect()->back()->with('success', 'Sukses Upload Foto Ke Galeri Sekolah');
+
+    }
+    public function upload_video(Request $req)
+    {
+
+        $video = Youtube::getVideoInfo($req->input('link'));
+        $judul = $video->snippet->title;
+        $channel = $video->snippet->channelTitle;
+
+        $data = YT::create([
+            'id_youtube' => $req->input('link'),
+            'judul'      => $judul,
+            'channel'    => $channel
+        ]);
+        return redirect()->back()->with('success', 'Sukses Upload Video Youtube Ke Galeri Sekolah');
+
+    }
+    public function hapus_foto()
+    {
+        # code...
+    }
+    public function hapus_video()
     {
         # code...
     }

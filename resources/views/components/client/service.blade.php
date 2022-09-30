@@ -28,6 +28,7 @@
           </div>
         </div>
         @empty
+        <div class="d-flex justify-content-center">Tidak Ada Informasi Apapun</div>
        @endforelse
       </div>
     </div>

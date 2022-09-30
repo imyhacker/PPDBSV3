@@ -36,7 +36,7 @@
 
                         </div>
                         <div class="col-md-12 mt-4">
-                           {!! $data->tentang !!}
+                           {!! $data->tentang ?? 'Belum Ada Data Apapun' !!}
                         </div>
                     </div>
                 </div>

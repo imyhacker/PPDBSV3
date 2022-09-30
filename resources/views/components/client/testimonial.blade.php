@@ -18,7 +18,7 @@
             />
             <img
               class="img-fluid animated pulse infinite"
-              src="img/testimonial-3.jpg"
+              src="{{asset('default/lukmen.jpeg')}}"
               alt=""
             />
           </div>
@@ -64,6 +64,30 @@
             <div class="testimonial-item text-center">
               <img
                 class="img-fluid rounded mx-auto mb-4"
+                src="{{asset('default/siska.jpg')}}"
+                alt=""
+              />
+              <p class="fs-5">
+               Dengan guru guru yang sudah tersertifikasi, membuat belajar komputer semakin lebih terarah. Yuk jadi bagian Telematika.
+              </p>
+              <h5>Siska Komalasari</h5>
+              <span>Staff Administrator</span>
+            </div>
+            <div class="testimonial-item text-center">
+              <img
+                class="img-fluid rounded mx-auto mb-4"
+                src="{{asset('default/eci.jpg')}}"
+                alt=""
+              />
+              <p class="fs-5">
+                Terimakasih banyak almamater ku telah banyak memberikan pelajaran dan pengajaran tentang dunia IT, yang dulunya sangat buta akan teknologi kini sedikit membuka mata tentang IT lewat SMK telematika Indramayu             
+               </p>
+              <h5>Sinengsih</h5>
+              <span>Mahasiswi AMIK Purnama Niaga</span>
+            </div>
+            <div class="testimonial-item text-center">
+              <img
+                class="img-fluid rounded mx-auto mb-4"
                 src="{{asset('default/lukmen.jpeg')}}"
                 alt=""
               />
@@ -72,7 +96,7 @@
                 Ilmu it yang ada di smkti terbaik se Indramayu loh. Gurunya pun bersahabat jadi tidak canggung untuk bertanya jika tidak bisa. Suasana sekolah nya pun sangat nyaman. Yok langsung join dan jadi bagian bari smkti.                
               </p>
               <h5>Lukman Hakim</h5>
-              <span>IT Graphic Desaigner</span>
+              <span>Mahasiswa Politeknik Negeri Indramayu</span>
             </div>
           </div>
         </div>
@@ -80,12 +104,12 @@
           <div class="testimonial-right h-100">
             <img
               class="img-fluid animated pulse infinite"
-              src="{{asset('default/ari.jpeg')}}"
+              src="{{asset('default/eci.jpg')}}"
               alt=""
             />
             <img
               class="img-fluid animated pulse infinite"
-              src="{{asset('default/lukmen.jpeg')}}"
+              src="{{asset('default/siska.jpg')}}"
               alt=""
             />
             <img

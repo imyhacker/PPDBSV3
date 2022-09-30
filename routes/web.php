@@ -58,4 +58,11 @@ Route::group(['prefix' => 'home/sekolah'], function($id = null){
     Route::post('/informasi_sekolah/post', [AdminController::class, 'upload_informasi'])->name('upload_informasi');
 
     Route::get('/informasi_sekolah/{id}/hapus_informasi', [AdminController::class, 'hapus_informasi'])->name('hapus_informasi', $id);
+    Route::get('/galeri', [AdminController::class, 'galeri'])->name('galeri');
+    Route::post('/galeri/upload_foto', [AdminController::class, 'upload_foto'])->name('upload_foto');
+
+    Route::post('/galeri/upload_video', [AdminController::class, 'upload_video'])->name('upload_video');
+
+    Route::get('/galeri/{id}/hapus_foto'. [AdminController::class, 'hapus_foto'])->name('hapus_foto', $id);
+    Route::get('/galeri/{id}/hapus_video', [AdminController::class, 'hapus_video'])->name('hapus_video', $id);
 });

@@ -5,7 +5,7 @@
           <div class="h-100 px-4 ps-lg-0">
             <h1 class="text-white mb-4">Siapa SMK Telematika Indramayu ?</h1>
             <p class="text-light mb-5 text-justify">
-              {{$tentang->deskripsi_singkat}}
+              {{$tentang->deskripsi_singkat ?? 'Belum Ada Apapun'}}
             </p>
             <a href="{{route('siapa_kami')}}" class="align-self-start btn btn-secondary py-3 px-5"
               >Selengkapnya</a

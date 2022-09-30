@@ -22,7 +22,7 @@
         <a href="{{route('siapa_kami')}}" class="nav-item nav-link">About Us</a>
         <a href="{{route('informasi')}}" class="nav-item nav-link">Information</a>
 
-        <a href="service.html" class="nav-item nav-link text-primary">Register !</a>
+        <a href="{{route('daftar')}}" class="nav-item nav-link text-primary">Register !</a>
         <div class="nav-item dropdown">
           <a
             href="#"
@@ -42,5 +42,5 @@
         <a href="contact.html" class="nav-item nav-link">Contact</a>
       </div>
     </div>
-    <a href="" class="btn btn-primary px-3 d-none d-lg-block">Register Here !</a>
+    <a href="{{route('daftar')}}" class="btn btn-primary px-3 d-none d-lg-block">Register Here !</a>
   </nav>

@@ -187,6 +187,7 @@ return [
          * Package Service Providers...
          */
         Arikun\Stislasimple\StislaServiceProvider::class,
+        Alaouy\Youtube\YoutubeServiceProvider::class,
         /*
          * Application Service Providers...
          */
