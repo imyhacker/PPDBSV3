@@ -27,16 +27,20 @@
                             <td>{{$p->nama_siswa}}</td>
                             <td>{{$p->asal_sekolah}}</td>
                             <td>{{$p->gelombang}}</td>
-                            <td>@if($p->acc == '1') <p class="text-success">Di Terima</p> @else <p class="text-warning">Menunggu</p> @endif</td>
-                            <td>@if($p->daful == '1') <p class="text-success">OK</p> @else <p class="text-danger">NOT OK</p>@endif</td>
+                            <td>@if($p->acc == '1') <span class="badge bg-success">Di Acc</span> @else <span class="badge bg-warning">Waiting</span> @endif</td>
+
+                            <td>@if($p->daful == '1') <span class="badge bg-success">Selesai</span> @else <span class="badge bg-warning">Belum Selesai</span>@endif</td>
                             <td>
-                                @if($p->acc == '0' || $p->daful == '0')
-                                Belum Di Terima, Belum Daftar Ulang
-                                @elseif($p->acc == '1' || $p->daful == '0')
-                                Sudah Di Terima, Belum Daftar Ulang
-                                @elseif($p->acc = '1' || $p->daful == '1')
-                                <a href="" class="btn btn-primary btn-block"><i class="fas fa-download"></i> Download Data Disini</a>
-                                @endif
+                               @if($p->acc == '1' && $p->daful == '0')
+                               <span class="badge bg-success">Di Acc</span>
+                               <span class="badge bg-warning">Belum Daftar Ulang</span>
+
+                               @elseif($p->acc == '1' && $p->daful == '1')
+                               <a href="" class="btn btn-primary"><i class="fas fa-download"></i> Download Data</a>
+                                @else 
+                                <span class="badge bg-warning">Waiting</span>
+                                <span class="badge bg-warning">Waiting</span> 
+                               @endif
                             </td>
                         </tr>
                     @endforeach

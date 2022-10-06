@@ -17,6 +17,7 @@ Route::group(['prefix' => '/'], function($id = null){
 
     Route::get('/foto', [ClientController::class, 'foto'])->name('foto');
     Route::get('/video', [ClientController::class, 'video'])->name('video');
+    Route::get('/help', [ClientController::class, 'help'])->name('help');
     Route::post('/hub', [ClientController::class, 'hub'])->name('hub');
 });
 

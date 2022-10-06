@@ -126,6 +126,9 @@ class ClientController extends Controller
     {
         $video = Youtube::all();
         return view('Client/video', compact('video'));
-
+    }
+    public function help()
+    {
+        return view('Client/tolong');
     }
 }

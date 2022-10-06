@@ -57,7 +57,7 @@ Sekolah SMK Telematika Indramayu Terus berupaya meningkatkan Kualitas pendidikan
                   src="{{asset('default/kepseklagi1icon.jpg')}}"
                   alt=""
                 />
-                <h5 class="mb-0">Email: tienyanuarherawaty@gmail.com</h5>
+                <h5 class="mb-0">Email: tientieara68@gmail.com</h5>
               </div>
             </div>
           </div>

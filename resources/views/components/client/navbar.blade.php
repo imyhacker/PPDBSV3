@@ -37,9 +37,7 @@
           </div>
           
         </div>
-        <a href="contact.html" class="nav-item nav-link">Help</a>
-
-        <a href="contact.html" class="nav-item nav-link">Contact</a>
+        <a href="{{route('help')}}" class="nav-item nav-link">Help</a>
       </div>
     </div>
     <a href="{{route('daftar')}}" class="btn btn-primary px-3 d-none d-lg-block">Register Here !</a>
