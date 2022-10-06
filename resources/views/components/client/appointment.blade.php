@@ -42,66 +42,77 @@ data-wow-delay="0.1s" >
     </div>
     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
       <div class="bg-white rounded p-5">
-        <form>
+        <div class="d-flex justify-content-center"><H2>Hubungi Kami</H2></div>
+        @if(session('sukses'))
+        <div class="alert alert-success" role="alert">
+          {{session('sukses')}}
+        </div>
+        @endif
+        <form method="POST" action="{{route('hub')}}">
+          @csrf
           <div class="row g-3">
             <div class="col-sm-6">
               <div class="form-floating">
                 <input
                   type="text"
+                  name="nama"
                   class="form-control"
                   id="gname"
                   placeholder="Gurdian Name"
                 />
-                <label for="gname">Your Name</label>
+                <label for="gname">Nama Lengkap</label>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
                 <input
                   type="email"
+                  name="email"
                   class="form-control"
                   id="gmail"
-                  placeholder="Gurdian Email"
+                  placeholder="xxx@xxx.com"
                 />
-                <label for="gmail">Your Email</label>
+                <label for="gmail">Email Valid</label>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
                 <input
-                  type="text"
+                  type="number"
+                  name="nomor_hp"
                   class="form-control"
                   id="cname"
-                  placeholder="Child Name"
+                  placeholder="08xxxxxxxxx"
                 />
-                <label for="cname">Your Mobile</label>
+                <label for="cname">Nomor HP/WA</label>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="cage"
-                  placeholder="Child Age"
-                />
-                <label for="cage">Service Type</label>
+              
+                <select name="untuk" class="form-control">
+                  <option disabled selected value>Pesan Untuk</option>
+                  <option value="Customer Services">Customer Services</option>
+                  <option value="Technical Support">Technical Support</option>
+                </select>
+                <label for="cage">Pesan Untuk</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-floating">
                 <textarea
+                name="pesan"
                   class="form-control"
-                  placeholder="Leave a message here"
+                  placeholder="Pesan kamu"
                   id="message"
-                  style="height: 375px"
+                  style="height: 328px"
                 ></textarea>
-                <label for="message">Message</label>
+                <label for="message">Pesan</label>
               </div>
             </div>
             <div class="col-12">
               <button class="btn btn-primary py-3 px-5" type="submit">
-                Get Appointment
+                Kirim Pesan
               </button>
             </div>
           </div>

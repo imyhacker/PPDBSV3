@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use FFI;
 use Excel;
 use App\Models\Foto;
-use App\Models\Youtube as YT;
+use App\Models\Kontak;
 use App\Models\Slider;
 use App\Models\Jurusan;
 use App\Models\Tentang;
@@ -12,8 +13,8 @@ use App\Models\Gelombang;
 use App\Models\Informasi;
 use App\Models\Pendaftar;
 use Illuminate\Http\Request;
+use App\Models\Youtube as YT;
 use Alaouy\Youtube\Facades\Youtube;
-use FFI;
 
 class AdminController extends Controller
 {
@@ -258,12 +259,37 @@ class AdminController extends Controller
         return redirect()->back()->with('success', 'Sukses Upload Video Youtube Ke Galeri Sekolah');
 
     }
-    public function hapus_foto()
+    public function hapus_foto($id)
     {
-        # code...
+        $data = Foto::find($id)->delete();
+        return redirect()->back()->with('success', 'Sukses Menghapus Foto Di Galeri Sekolah');
+
     }
-    public function hapus_video()
+    public function hapus_video($id)
     {
-        # code...
+        $data = YT::find($id)->delete();
+        return redirect()->back()->with('success', 'Sukses Menghapus Video Di Galeri Sekolah');
+
+    }
+    public function kontak_admin()
+    {
+        $data = Kontak::orderBy('id', 'DESC')->get();
+        return view('Dashboard/sekolah/kontak', compact('data'));
+    }
+    public function dibaca($id)
+    {
+        
+        $baca = Kontak::find($id);
+        $baca->update([
+            'status' => 1
+        ]);
+        return view('Dashboard/sekolah/baca', compact('baca'));
+
+    }
+    public function hapus_pesan($id)
+    {
+        $data = Kontak::find($id)->delete();
+        return redirect()->back()->with('success', 'Sukses Menghapus Pesan');
+
     }
 }

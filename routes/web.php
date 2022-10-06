@@ -25,6 +25,7 @@ Route::group(['prefix' => '/'], function($id = null){
     Route::get('/siapa', [ClientController::class, 'siapa_kami'])->name('siapa_kami');
     Route::get('/informasi', [ClientController::class, 'informasi'])->name('informasi');
     Route::get('/informasi/{id}/baca', [ClientController::class, 'baca'])->name('baca', $id);
+    Route::post('/hub', [ClientController::class, 'hub'])->name('hub');
 });
 
 Auth::routes();
@@ -65,4 +66,8 @@ Route::group(['prefix' => 'home/sekolah'], function($id = null){
 
     Route::get('/galeri/{id}/hapus_foto', [AdminController::class, 'hapus_foto'])->name('hapus_foto', $id);
     Route::get('/galeri/{id}/hapus_video', [AdminController::class, 'hapus_video'])->name('hapus_video', $id);
+
+    Route::get('/kontak_admin', [AdminController::class, 'kontak_admin'])->name('kontak_admin');
+    Route::get('/kontak_admin/{id}/dibaca', [AdminController::class, 'dibaca'])->name('dibaca', $id);
+    Route::get('/kontak_admin/{id}/hapus_pesan', [AdminController::class, 'hapus_pesan'])->name('hapus_pesan', $id);
 });

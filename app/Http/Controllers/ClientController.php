@@ -7,6 +7,7 @@ use App\Models\Jurusan;
 use App\Models\Tentang;
 use App\Models\Gelombang;
 use App\Models\Informasi;
+use App\Models\Kontak;
 use App\Models\Pendaftar;
 use Illuminate\Http\Request;
 
@@ -102,5 +103,16 @@ class ClientController extends Controller
     {
         $data = Informasi::find($id);
         return view('Client/baca', compact('data'));
+    }
+    public function hub(Request $req)
+    {
+        $data = Kontak::create([
+            'nama' => $req->input('nama'),
+            'nomor_hp' => $req->input('nomor_hp'),
+            'email' => $req->input('email'),
+            'untuk' => $req->input('untuk'),
+            'pesan' => $req->input('pesan')
+        ]);
+        return redirect()->back()->with('sukses', 'Berhasil Mengirim Pesan, Terima Kasih');
     }
 }

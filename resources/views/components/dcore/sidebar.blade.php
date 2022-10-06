@@ -33,8 +33,9 @@
                 <li><a class="nav-link" href="{{route('informasi_slide')}}">Informasi Slide</a></li>
                 <li><a class="nav-link" href="{{route('informasi_sekolah')}}">Informasi Sekolah</a></li>
                 <li><a class="nav-link" href="{{route('tentang_sekolah')}}">Tentang Sekolah</a></li>
-                <li><a class="nav-link" href="">Galeri Sekolah</a></li>
-                <li><a class="nav-link" href="">Testimoni</a></li>
+                <li><a class="nav-link" href="{{route('kontak_admin')}}">Kontak Depan</a></li>
+
+                <li><a class="nav-link" href="{{route('galeri')}}">Galeri Sekolah</a></li>
               </ul>
             </li>
           </ul>
