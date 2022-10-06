@@ -30,7 +30,9 @@
                             <td>@if($p->acc == '1') <p class="text-success">Di Terima</p> @else <p class="text-warning">Menunggu</p> @endif</td>
                             <td>@if($p->daful == '1') <p class="text-success">OK</p> @else <p class="text-danger">NOT OK</p>@endif</td>
                             <td>
-                                @if($p->acc == '1' || $p->daful == '0')
+                                @if($p->acc == '0' || $p->daful == '0')
+                                Belum Di Terima, Belum Daftar Ulang
+                                @elseif($p->acc == '1' || $p->daful == '0')
                                 Sudah Di Terima, Belum Daftar Ulang
                                 @elseif($p->acc = '1' || $p->daful == '1')
                                 <a href="" class="btn btn-primary btn-block"><i class="fas fa-download"></i> Download Data Disini</a>

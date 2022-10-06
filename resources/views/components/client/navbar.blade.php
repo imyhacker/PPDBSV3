@@ -31,8 +31,8 @@
             >Gallery</a
           >
           <div class="dropdown-menu bg-light border-0 m-0">
-            <a href="feature.html" class="dropdown-item">Photo</a>
-            <a href="appointment.html" class="dropdown-item">Video</a>
+            <a href="{{route('foto')}}" class="dropdown-item">Photo</a>
+            <a href="{{route('video')}}" class="dropdown-item">Video</a>
             
           </div>
           

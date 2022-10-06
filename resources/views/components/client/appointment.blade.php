@@ -11,32 +11,20 @@ data-wow-delay="0.1s" >
       </p>
       <div class="bg-white rounded p-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
-          <img
-            class="flex-shrink-0 rounded-circle me-3"
-            src="img/profile.jpg"
-            alt=""
-          />
-          <h5 class="text-white mb-0">Nurokhim: +012 345 6789</h5>
+         
+          <h5 class="text-white mb-0 mt-2 mb-2">Nurokhim: +012 345 6789</h5>
         </div>
       </div>
       <div class="bg-white rounded p-3 mt-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
-          <img
-            class="flex-shrink-0 rounded-circle me-3"
-            src="img/profile.jpg"
-            alt=""
-          />
-          <h5 class="text-white mb-0">Wining: +012 345 6789</h5>
+         
+          <h5 class="text-white mb-0 mt-2 mb-2">Wining: +012 345 6789</h5>
         </div>
       </div>
       <div class="bg-white rounded p-3 mt-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
-          <img
-            class="flex-shrink-0 rounded-circle me-3"
-            src="img/profile.jpg"
-            alt=""
-          />
-          <h5 class="text-white mb-0">Mastuti: +012 345 6789</h5>
+         
+          <h5 class="text-white mb-0 mt-2 mb-2">Mastuti: +012 345 6789</h5>
         </div>
       </div>
     </div>

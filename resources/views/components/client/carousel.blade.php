@@ -15,11 +15,11 @@
                     {{$slider->deskripsi_slider}}
                   </p>
                   <a href="{{route('daftar')}}" class="btn btn-primary py-3 px-5"
-                    >Daftar Disini</a
-                  >
-                  <a href="{{route('cek')}}" class="btn btn-info py-3 px-5"
-                    >Cek Disini</a
-                  >
+                  >Daftar Disini <i class="fas fa-arrow-right"></i></a
+                >
+                <a href="{{route('cek')}}" class="btn btn-dark py-3 px-5"
+                  >Cek Data Disini <i class="fas fa-arrow-right"></i></a
+                >
                 </div>
               </div>
             </div>

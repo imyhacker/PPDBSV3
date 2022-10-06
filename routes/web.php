@@ -5,17 +5,6 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::group(['prefix' => '/'], function($id = null){
     Route::get('/', [ClientController::class, 'index'])->name('/');
     Route::get('/daftar', [ClientController::class, 'daftar'])->name('daftar');
@@ -25,10 +14,13 @@ Route::group(['prefix' => '/'], function($id = null){
     Route::get('/siapa', [ClientController::class, 'siapa_kami'])->name('siapa_kami');
     Route::get('/informasi', [ClientController::class, 'informasi'])->name('informasi');
     Route::get('/informasi/{id}/baca', [ClientController::class, 'baca'])->name('baca', $id);
+
+    Route::get('/foto', [ClientController::class, 'foto'])->name('foto');
+    Route::get('/video', [ClientController::class, 'video'])->name('video');
     Route::post('/hub', [ClientController::class, 'hub'])->name('hub');
 });
 
-Auth::routes();
+Auth::routes(); // LOGIN
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 

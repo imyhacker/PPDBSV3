@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Foto;
 use App\Models\Slider;
 use App\Models\Jurusan;
 use App\Models\Tentang;
@@ -9,6 +10,7 @@ use App\Models\Gelombang;
 use App\Models\Informasi;
 use App\Models\Kontak;
 use App\Models\Pendaftar;
+use App\Models\Youtube;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -114,5 +116,16 @@ class ClientController extends Controller
             'pesan' => $req->input('pesan')
         ]);
         return redirect()->back()->with('sukses', 'Berhasil Mengirim Pesan, Terima Kasih');
+    }
+    public function foto()
+    {
+        $foto = Foto::all();
+        return view('Client/foto', compact('foto'));
+    }
+    public function video()
+    {
+        $video = Youtube::all();
+        return view('Client/video', compact('video'));
+
     }
 }

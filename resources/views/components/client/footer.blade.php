@@ -14,66 +14,46 @@ data-wow-delay="0.1s">
         Ayo Bergabung Bersama Kami Jadi Bagian Dari Keluarga SMK Telematika Indramayu! <br> <i>Pilihan Cerdas Generasi Emas</i>
       </p>
       <div class="d-flex pt-2">
-        <a class="btn btn-square me-1" href=""
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a class="btn btn-square me-1" href=""
+       
+        <a class="btn btn-square me-1" href="https://www.facebook.com/hoemas.smkti"
           ><i class="fab fa-facebook-f"></i
         ></a>
-        <a class="btn btn-square me-1" href=""
+        <a class="btn btn-square me-1" href="https://www.youtube.com/channel/UCGEoK96YkcjEHem-BDko2GQ"
           ><i class="fab fa-youtube"></i
         ></a>
-        <a class="btn btn-square me-0" href=""
-          ><i class="fab fa-linkedin-in"></i
+        <a class="btn btn-square me-0" href="https://www.instagram.com/official_smkti.indramayu/"
+          ><i class="fab fa-instagram"></i
         ></a>
       </div>
     </div>
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-5 col-md-6">
       <h5 class="text-light mb-4">Address</h5>
       <p>
-        <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+        <i class="fa fa-map-marker-alt me-3"></i>Jl. Sindangkerta Kec. Lohbener Kab. Indramayu
       </p>
-      <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-      <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+      <p><i class="fa fa-phone-alt me-3"></i>(0234) 271412</p>
+      <p><i class="fa fa-envelope me-3"></i>smktelematikaindramayu@gmail.com</p>
     </div>
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-4 col-md-6">
       <h5 class="text-light mb-4">Quick Links</h5>
-      <a class="btn btn-link" href="">About Us</a>
-      <a class="btn btn-link" href="">Contact Us</a>
-      <a class="btn btn-link" href="">Our Services</a>
-      <a class="btn btn-link" href="">Terms & Condition</a>
-      <a class="btn btn-link" href="">Support</a>
+      <a class="btn btn-link" href="{{route('siapa_kami')}}">About Us</a>
+      <a class="btn btn-link" href="{{route('informasi')}}">Information</a>
+      <a class="btn btn-link" href="{{route('daftar')}}">Register</a>
+     
     </div>
-    <div class="col-lg-3 col-md-6">
-      <h5 class="text-light mb-4">Newsletter</h5>
-      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-      <div class="position-relative mx-auto" style="max-width: 400px">
-        <input
-          class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-          type="text"
-          placeholder="Your email"
-        />
-        <button
-          type="button"
-          class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
-        >
-          SignUp
-        </button>
-      </div>
-    </div>
+  
   </div>
 </div>
 <div class="container-fluid copyright">
   <div class="container">
     <div class="row">
       <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+        &copy; <a href="https://www.smktelematikaindramayu.sch.id">SMKTI</a>, All Right Reserved.
       </div>
       <div class="col-md-6 text-center text-md-end">
-        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-        <br />Distributed By:
-        <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+        Designed With ♥ By <a href="https://exercise.smktelematikaindramayu.sch.id/">Exercise</a>
+        <br />Crafted With ♥ By 
+        <a href="https://ariikun.surge.sh" target="_blank">Arikun</a>
       </div>
     </div>
   </div>
