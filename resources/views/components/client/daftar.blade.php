@@ -59,7 +59,7 @@
         </div>
         <div class="col-md-6 mt-3">
             <label>Asal Sekolah <sup class="text-danger">*</sup></label>
-            <input type="text" class="form-control @error('asal_sekolah') is-invalid @enderror" placeholder="Asal Sekolah SMP"  @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="asal_sekolah" @endif>
+            <input type="text" class="form-control @error('asal_sekolah') is-invalid @enderror" placeholder="Asal Sekolah SMP" {{$form}} @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="asal_sekolah" @endif>
     
             @error('asal_sekolah')
             <div class="invalid-feedback">{{$message}}</div>

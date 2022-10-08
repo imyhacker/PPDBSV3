@@ -11,6 +11,7 @@ use App\Models\Informasi;
 use App\Models\Kontak;
 use App\Models\Pendaftar;
 use App\Models\Youtube;
+use Barryvdh\DomPDF\PDF as DomPDFPDF;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -130,5 +131,13 @@ class ClientController extends Controller
     public function help()
     {
         return view('Client/tolong');
+    }
+    public function download($id)
+    {
+        $data = Pendaftar::find($id);
+        $pdf = DomPDFPDF::loadView('Client/pdf', [
+            'data' => $data
+        ]);
+        return $pdf->download('data.pdf');
     }
 }

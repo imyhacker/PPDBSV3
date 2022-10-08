@@ -36,7 +36,7 @@
                                <span class="badge bg-warning">Belum Daftar Ulang</span>
 
                                @elseif($p->acc == '1' && $p->daful == '1')
-                               <a href="" class="btn btn-primary"><i class="fas fa-download"></i> Download Data</a>
+                               <a href="{{route('download', $p->id)}}" class="btn btn-primary"><i class="fas fa-download"></i> Download Data</a>
                                 @else 
                                 <span class="badge bg-warning">Waiting</span>
                                 <span class="badge bg-warning">Waiting</span> 

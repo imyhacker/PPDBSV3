@@ -11,6 +11,8 @@ Route::group(['prefix' => '/'], function($id = null){
     Route::post('/daftar/yes', [ClientController::class, 'yes_daftar'])->name('yes_daftar');
 
     Route::get('/cek', [ClientController::class, 'cek'])->name('cek');
+    Route::get('/cek/{id}/download', [ClientController::class, 'download'])->name('download', $id);
+
     Route::get('/siapa', [ClientController::class, 'siapa_kami'])->name('siapa_kami');
     Route::get('/informasi', [ClientController::class, 'informasi'])->name('informasi');
     Route::get('/informasi/{id}/baca', [ClientController::class, 'baca'])->name('baca', $id);
