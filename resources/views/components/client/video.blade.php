@@ -8,7 +8,7 @@
       <div class="row g-4 justify-content-center">
           @foreach($video as $v)
         <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <iframe src="https://www.youtube.com/embed/{{$v->id_youtube}}" frameborder="0" allowfullscreen></iframe>
                 <div class="card-body">
                   <h5 class="card-title">{{$v->judul}}</h5>
