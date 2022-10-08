@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-    <a href="index.html" class="navbar-brand d-flex align-items-center">
+    <a href="{{url('/')}}" class="navbar-brand d-flex align-items-center">
       <h1 class="m-0">
         <img
           class="img-fluid me-3"
