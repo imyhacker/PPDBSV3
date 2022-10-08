@@ -195,7 +195,7 @@
                                            
 
                                             <td>
-                                                <a href="{{route('daful', $ddfu->id)}}" class="btn btn-sm btn-block btn-outline-success"><i class="fas fa-download"></i></a>
+                                                <a href="{{route('download', $ddfu->id)}}" class="btn btn-sm btn-block btn-outline-success"><i class="fas fa-download"></i></a>
                                             </td>
                                         </tr>
                                         @endforeach

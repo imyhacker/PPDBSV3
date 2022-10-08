@@ -22,6 +22,7 @@ return new class extends Migration
             // Data siswa
             $table->string('nama_siswa');
             $table->string('tempat_lahir');
+            $table->string('jenis_kelamin');
             $table->date('tanggal_lahir');
             $table->string('asal_sekolah');
             $table->string('agama');

@@ -35,6 +35,15 @@
         <div class="invalid-feedback">{{$message}}</div>
         @enderror
     </div>
+    <div class="col-md-12 mt-3">
+        <label>Jenis Kelamin</label>
+        <select class="form-control" {{$form}} @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="jenis_kelamin" @endif>
+                <option disabled selected value>Pilih Jenis Kelamin</option>
+                <option value="Laki Laki">Laki Laki</option>
+                <option value="Perempuan">Perempuan</option>
+                       
+              </select>
+    </div>
     <div class="col-md-6 mt-3">
         <label>Tempat Lahir <sup class="text-danger">*</sup></label>
         <input type="text" class="form-control @error('tempat_lahir') is-invalid @enderror" placeholder="Tempat Lahir Siswa"{{$form}} @if($gelombang == null) @elseif($gelombang->status_gelombang == 'Buka') name="tempat_lahir" @endif>

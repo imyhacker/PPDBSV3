@@ -11,7 +11,7 @@ use App\Models\Informasi;
 use App\Models\Kontak;
 use App\Models\Pendaftar;
 use App\Models\Youtube;
-use Barryvdh\DomPDF\PDF as DomPDFPDF;
+use PDF;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -61,6 +61,7 @@ class ClientController extends Controller
             'gelombang' => 'required',
             'jurusan' => 'required',
             'nama_siswa' => 'required',
+            'jenis_kelamin' => 'required',
             'tempat_lahir' => 'required',
             'tanggal_lahir' => 'required',
             'asal_sekolah' => 'required',
@@ -71,6 +72,7 @@ class ClientController extends Controller
             'gelombang'     => $req->input('gelombang'),
             'jurusan'       => $req->input('jurusan'),
             'nama_siswa'    => $req->input('nama_siswa'),
+            'jenis_kelamin'    => $req->input('jenis_kelamin'),
             'tempat_lahir'  => $req->input('tempat_lahir'),
             'tanggal_lahir' => $req->input('tanggal_lahir'),
             'asal_sekolah'  => $req->input('asal_sekolah'),
@@ -135,9 +137,9 @@ class ClientController extends Controller
     public function download($id)
     {
         $data = Pendaftar::find($id);
-        $pdf = DomPDFPDF::loadView('Client/pdf', [
-            'data' => $data
-        ]);
-        return $pdf->download('data.pdf');
+        $pdf = PDF::loadView('Client/pdf', compact('data'));
+        //dd($data);
+        //dd($pdf);
+        return $pdf->stream('data.pdf');
     }
 }

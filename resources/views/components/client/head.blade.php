@@ -1,9 +1,32 @@
 <head>
     <meta charset="utf-8" />
-    <title>Insure - Insurance HTML Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    
+
+ <!-- Primary Meta Tags -->
+ <title>PPDB SMK Telematika Indramayu - Pendaftaran Siswa Baru</title>
+ <meta name="title" content="PPDB SMK Telematika Indramayu - Pendaftaran Siswa Baru">
+ <meta name="description" content="Pendaftaran Siswa Baru Di SMK Telematika Indramayu Tahun 2023/2024 Mengggunakan Sistem Online / Daring.">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://metatags.io/">
+ <meta property="og:title" content="PPDB SMK Telematika Indramayu - Pendaftaran Siswa Baru">
+ <meta property="og:description" content="Pendaftaran Siswa Baru Di SMK Telematika Indramayu Tahun 2021/2022 Mengggunakan Sistem Online / Daring.">
+ <meta property="og:image" content="">
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary_large_image">
+ <meta property="twitter:url" content="https://metatags.io/">
+ <meta property="twitter:title" content="PPDB SMK Telematika Indramayu - Pendaftaran Siswa Baru">
+ <meta property="twitter:description" content="Pendaftaran Siswa Baru Di SMK Telematika Indramayu Tahun 2021/2022 Mengggunakan Sistem Online / Daring.">
+ <meta property="twitter:image" content="">
+
+<meta content="PPDB" name="keywords">
+
+
+
+
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
