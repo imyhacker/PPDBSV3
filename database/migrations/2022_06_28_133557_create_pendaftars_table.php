@@ -21,24 +21,29 @@ return new class extends Migration
             
             // Data siswa
             $table->string('nama_siswa');
+            $table->bigInteger('nik');
             $table->string('tempat_lahir');
             $table->string('jenis_kelamin');
             $table->date('tanggal_lahir');
             $table->string('asal_sekolah');
             $table->string('agama');
+            $table->string('hobi');
+            $table->string('cita');
 
             // Data ortu
-            $table->string('nama_ayah')->nullable();
-            $table->string('nama_ibu')->nullable();
-            $table->string('status_ayah')->nullable();
-            $table->string('status_ibu')->nullable();
+            $table->string('nama_ayah');
+            $table->string('pekerjaan_ayah');
+            $table->string('nama_ibu');
+            $table->string('pekerjaan_ibu');
+            $table->string('status_ayah');
+            $table->string('status_ibu');
 
             // Data Kontak
             $table->string('hp_ayah')->nullable();
             $table->string('hp_ibu')->nullable();
             $table->string('hp_siswa')->nullable();
             $table->string('rekomendasi')->nullable();
-            $table->longText('alamat')->nullable();
+            $table->longText('alamat');
 
             // ACC 
             $table->string('acc')->default(0)->nullable();

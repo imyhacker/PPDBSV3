@@ -12,7 +12,7 @@
             <div class="col-lg-12">
               <div class="card">
                 <div class="card-header">
-                  <h4>Budget vs Sales</h4>
+                  <h4>Form Pendaftaran</h4>
                 </div>
                 <div class="card-body">
                   <x-dcore.daftar :jurusan="$jurusan" :gelombang="$gelombang" :form="$form" :button="$button"/>

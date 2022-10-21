@@ -47,6 +47,16 @@ class AdminController extends Controller
     {
         $req->validate([
             'gelombang' => 'required',
+            'nik' => 'required',
+            'hobi' => 'required',
+            'cita' => 'required',
+            'nama_ayah' => 'required',
+            'status_ayah' => 'required',
+            'jenis_kelamin' => 'required',
+            'pekerjaan_ayah' => 'required',
+            'nama_ibu' => 'required',
+            'status_ibu' => 'required',
+            'pekerjaan_ibu' => 'required',
             'jurusan' => 'required',
             'nama_siswa' => 'required',
             'jenis_kelamin' => 'required',
@@ -54,10 +64,14 @@ class AdminController extends Controller
             'tanggal_lahir' => 'required',
             'asal_sekolah' => 'required',
             'agama' => 'required',
+            'alamat' => 'required',
         ]);
 
         $data = Pendaftar::create([
             'gelombang'     => $req->input('gelombang'),
+            'nik'           => $req->input('nik'),
+            'hobi'          => $req->input('hobi'),
+            'cita'          => $req->input('cita'),
             'jurusan'       => $req->input('jurusan'),
             'nama_siswa'    => $req->input('nama_siswa'),
             'jenis_kelamin' => $req->input('jenis_kelamin'),
@@ -66,7 +80,9 @@ class AdminController extends Controller
             'asal_sekolah'  => $req->input('asal_sekolah'),
             'agama'         => $req->input('agama'),
             'nama_ayah'     => $req->input('nama_ayah'),
+            'pekerjaan_ayah'      => $req->input('pekerjaan_ayah'),
             'nama_ibu'      => $req->input('nama_ibu'),
+            'pekerjaan_ibu'      => $req->input('pekerjaan_ibu'),
             'status_ayah'   => $req->input('status_ayah'),
             'status_ibu'    => $req->input('status_ibu'),
             'hp_ayah'       => $req->input('hp_ayah'),

@@ -97,8 +97,19 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Lengkap</th>
+                                            <th>NIK Siswa</th>
+                                            <th>TTL</th>
+                                            <th>Agama</th>
                                             <th>Asal Sekolah</th>
-                                            <th>Rekomendasi</th>
+                                            <th>Hobi</th>
+                                            <th>Cita Cita</th>
+                                            <th>Ayah</th>
+                                            <th>P. Ayah</th>
+                                            <th>Status Ayah</th>
+                                            <th>Ibu</th>
+                                            <th>P. Ibu</th>
+                                            <th>Status Ibu</th>
+
                                             <th>OPTION</th>
                                         </tr>
                                     </thead>
@@ -108,8 +119,18 @@
                                         <tr>
                                             <td>{{$no++}}</td>
                                             <td>{{$dc->nama_siswa}}</td>
+                                            <td>{{$dc->nik}}</td>
+                                            <td>{{$dc->tempat_lahir}}, {{$dc->tanggal_lahir}}</td>
+                                            <td>{{$dc->agama}}</td>
                                             <td>{{$dc->asal_sekolah}}</td>
-                                            <td>{{$dc->rekomendasi ?? '-' }}</td>
+                                            <td>{{$dc->hobi}}</td>
+                                            <td>{{$dc->cita}}</td>
+                                            <td>{{$dc->nama_ayah}}</td>
+                                            <td>{{$dc->pekerjaan_ayah}}</td>
+                                            <td>{{$dc->status_ayah}}</td>
+                                            <td>{{$dc->nama_ibu}}</td>
+                                            <td>{{$dc->pekerjaan_ibu}}</td>
+                                            <td>{{$dc->status_ibu}}</td>
                                             <td>
                                                 <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                                     id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
