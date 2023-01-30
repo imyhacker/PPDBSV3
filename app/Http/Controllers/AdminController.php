@@ -221,8 +221,17 @@ class AdminController extends Controller
     }
     public function upload_tentang_sekolah(Request $req)
     {
+
+        $cek  = Tentang::first();
+        if($cek == Null){
         $data = Tentang::createOrUpdate($req->all());
         return redirect()->back()->with('success', 'Sukses Upload Tentang Sekolah');
+        }else{
+        $data = Tentang::latest()->update($req->all());
+        return redirect()->back()->with('success', 'Sukses Upload Tentang Sekolah');
+
+        }
+       
 
     }
     public function informasi_sekolah()
