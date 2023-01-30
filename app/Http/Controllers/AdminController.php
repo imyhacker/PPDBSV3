@@ -224,7 +224,7 @@ class AdminController extends Controller
 
         $cek  = Tentang::first();
         if($cek == Null){
-        $data = Tentang::createOrUpdate($req->all());
+        $data = Tentang::create($req->all());
         return redirect()->back()->with('success', 'Sukses Upload Tentang Sekolah');
         }else{
         $data = Tentang::latest()->update($req->all());
