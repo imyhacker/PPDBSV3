@@ -7,22 +7,22 @@
  <title>PPDB SMK Telematika Indramayu - Pendaftaran Siswa Baru</title> 
  <!-- Open Graph / Facebook -->
  <meta property="og:type" content="website">
- <meta property="og:url" content="https://ppdb.smktelematikaindramayu.sch.id/">
- <meta property="og:title" content="PPDB SMK Telematika Indramayu - Pendaftaran Siswa Baru">
- <meta property="og:description" content="Pendaftaran Siswa Baru Di SMK Telematika Indramayu Tahun 2021/2022 Mengggunakan Sistem Online / Daring.">
+ <meta property="og:url" content="https://ppdb.smktelematikaindramayu.sch.id/informasi">
+ <meta property="og:title" content="{{$data->judul}}">
+ <meta property="og:description" content="{{$data->deskripsi_informasi}}">
  <meta property="og:image" content="https://cdn.kibrispdr.org/data/116/download-logo-smkti-37.png">
  
  <!-- Twitter -->
  <meta property="twitter:card" content="summary_large_image">
- <meta property="twitter:url" content="https://ppdb.smktelematikaindramayu.sch.id/">
- <meta property="twitter:title" content="PPDB SMK Telematika Indramayu - Pendaftaran Siswa Baru">
- <meta property="twitter:description" content="Pendaftaran Siswa Baru Di SMK Telematika Indramayu Tahun 2021/2022 Mengggunakan Sistem Online / Daring.">
+ <meta property="twitter:url" content="https://ppdb.smktelematikaindramayu.sch.id/informasi">
+ <meta property="twitter:title" content="{{$data->judul}}">
+ <meta property="twitter:description" content="{{$data->deskripsi_informasi}}">
  <meta property="twitter:image" content="https://cdn.kibrispdr.org/data/116/download-logo-smkti-37.png">
 
 <meta content="PPDB" name="keywords">
 
-<meta name="title" content="SMK Telematika Indramayu - Pendaftaran Siswa Baru">
-<meta name="description" content="SMK Telematika Indramayu Adalah Sekolah Yang Berdiri Pada Tahun 2003, Yang Hanya Memiliki Satu Jurusan Yaitu Teknik Komputer dan Jaringan (TKJ )">
+<meta name="title" content="{{$data->judul}}">
+<meta name="description" content="{{$data->deskripsi_informasi}}">
 <meta name="keywords" content="SMKTI, SMK Telematika Indramyu, PPDB SMK TI, PPDB SMK Telematika Indramayu, SMKTI BISA, SMK BISA">
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

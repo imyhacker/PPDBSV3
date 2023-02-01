@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <x-client.head />
+    <x-client.head_baca />
   <body>
     <!-- Spinner Start -->
    <x-client.spinner />
