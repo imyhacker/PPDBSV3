@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <x-client.head_baca />
+    <x-client.head_baca :data="$data"/>
   <body>
     <!-- Spinner Start -->
    <x-client.spinner />
