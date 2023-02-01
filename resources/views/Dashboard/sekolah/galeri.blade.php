@@ -42,7 +42,7 @@
                                        <td>{{$no++}}</td>
                                        <td>{{$f->judul}}</td>
                                        <td>
-                                           <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                           <a href="{{route('hapus_foto', $f->id)}}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                        </td>
                                    </tr>
                                    @endforeach
