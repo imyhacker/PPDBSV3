@@ -9,10 +9,10 @@
               <div class="row">
                 <div class="col-12 col-lg-6">
                   <h1 class="display-3 text-dark mb-4 animated slideInDown" style="text-shadow: 0 0 4px #ffffff, 0 0 5px #ffffff;">
-                    {{$slider->judul}}
+                    {{$slider->judul ?? ''}}
                   </h1>
-                  <p class="fs-5 text-warning mb-5" style="text-shadow: 0 0 2px red, 0 0 2px blue;">
-                    {{$slider->deskripsi_slider}}
+                  <p class="fs-5 text-dark mb-5" >
+                    {{$slider->deskripsi_slider ?? ''}}
                   </p>
                   <a href="{{route('daftar')}}" class="btn btn-primary py-3 px-5"
                   >Daftar Disini <i class="fas fa-arrow-right"></i></a
