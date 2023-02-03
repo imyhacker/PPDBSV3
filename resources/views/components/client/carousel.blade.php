@@ -3,7 +3,7 @@
       <div class="carousel-inner">
         @forelse($slide as $key => $slider)
         <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
-          <img class="w-100" src="{{asset('slide/'.$slider->wallpaper)}}" alt="Image" style="filter: blur(4px);" />
+          <img class="w-100" src="{{asset('slide/'.$slider->wallpaper)}}" alt="Image" />
           <div class="carousel-caption">
             <div class="container">
               <div class="row">
