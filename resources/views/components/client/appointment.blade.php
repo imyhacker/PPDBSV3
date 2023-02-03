@@ -12,19 +12,19 @@ data-wow-delay="0.1s" >
       <div class="bg-white rounded p-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
          
-          <h5 class="text-white mb-0 mt-2 mb-2">Nurokhim: +012 345 6789</h5>
+          <h5 class="text-white mb-0 mt-2 mb-2">Nurokhim : +62 819-4734-4359</h5>
         </div>
       </div>
       <div class="bg-white rounded p-3 mt-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
          
-          <h5 class="text-white mb-0 mt-2 mb-2">Wining: +012 345 6789</h5>
+          <h5 class="text-white mb-0 mt-2 mb-2">Rina : 62 897-8971-643</h5>
         </div>
       </div>
       <div class="bg-white rounded p-3 mt-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
          
-          <h5 class="text-white mb-0 mt-2 mb-2">Mastuti: +012 345 6789</h5>
+          <h5 class="text-white mb-0 mt-2 mb-2">Ari : -</h5>
         </div>
       </div>
     </div>
