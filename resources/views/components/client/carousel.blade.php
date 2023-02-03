@@ -11,7 +11,7 @@
                   <h1 class="display-3 text-dark mb-4 animated slideInDown" style="text-shadow: 0 0 4px #ffffff, 0 0 5px #ffffff;">
                     {{$slider->judul ?? ''}}
                   </h1>
-                  <p class="fs-5 text-dark mb-5" >
+                  <p class="fs-5 text-dark mb-5" style="text-shadow: 0 0 2px #ffffff">
                     {{$slider->deskripsi_slider ?? ''}}
                   </p>
 
