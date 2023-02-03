@@ -23,7 +23,7 @@ Route::group(['prefix' => '/'], function($id = null){
     Route::post('/hub', [ClientController::class, 'hub'])->name('hub');
 });
 
-Auth::routes(['register' => true]); // LOGIN
+Auth::routes(['register' => false]); // LOGIN
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
