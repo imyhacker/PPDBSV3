@@ -4,7 +4,7 @@
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
           <h1 class="display-6 mb-5">Kenapa Harus Di SMK Telematika Indramayu ?</h1>
           <p class="mb-4">
-            Karena Di SMK Telematika Indramayu adalah sekolah yang hanya memiliki 1 jurusan yaitu Teknik Komputer dan Jaringan yang lebih condong ke teknik Jaringan dan Informatika.
+            Karena Di SMK Telematika Indramayu adalah sekolah yang memiliki dua jurusan yaitu Teknik Komputer dan Jaringan ( TKJ ) dan Tata Kecantikan, yang dimana memiliki guru guru yang sudah bersertifikasi dan berpengalaman.
           </p>
           <div class="row g-3">
             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
