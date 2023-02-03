@@ -14,12 +14,17 @@
                   <p class="fs-5 text-dark mb-5" >
                     {{$slider->deskripsi_slider ?? ''}}
                   </p>
+
+                  @if($slider->judul !== null || $slider->deskripsi_slider !== null)
                   <a href="{{route('daftar')}}" class="btn btn-primary py-3 px-5"
                   >Daftar Disini <i class="fas fa-arrow-right"></i></a
                 >
                 <a href="{{route('cek')}}" class="btn btn-dark py-3 px-5"
                   >Cek Data Disini <i class="fas fa-arrow-right"></i></a
                 >
+                @else
+                  
+                @endif
                 </div>
               </div>
             </div>
