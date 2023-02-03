@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('slider', function (Blueprint $table) {
             $table->id();
             $table->longText('wallpaper');
-            $table->string('judul');
-            $table->longText('deskripsi_slider');
+            $table->string('judul')->nullable();
+            $table->longText('deskripsi_slider')->nullable();
             $table->timestamps();
         });
     }
