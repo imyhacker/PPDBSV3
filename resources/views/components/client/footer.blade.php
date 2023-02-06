@@ -27,7 +27,7 @@ data-wow-delay="0.1s">
       </div>
     </div>
     <div class="col-lg-5 col-md-6">
-      <h5 class="text-light mb-4">Address</h5>
+      <h5 class="text-light mb-4">Alamat</h5>
       <p>
         <i class="fa fa-map-marker-alt me-3"></i>Jl. Sindangkerta Kec. Lohbener Kab. Indramayu
       </p>
@@ -35,10 +35,10 @@ data-wow-delay="0.1s">
       <p><i class="fa fa-envelope me-3"></i>smktelematikaindramayu@gmail.com</p>
     </div>
     <div class="col-lg-4 col-md-6">
-      <h5 class="text-light mb-4">Quick Links</h5>
-      <a class="btn btn-link" href="{{route('siapa_kami')}}">About Us</a>
-      <a class="btn btn-link" href="{{route('informasi')}}">Information</a>
-      <a class="btn btn-link" href="{{route('daftar')}}">Register</a>
+      <h5 class="text-light mb-4">Link Alternatif</h5>
+      <a class="btn btn-link" href="{{route('siapa_kami')}}">Tentang Kami</a>
+      <a class="btn btn-link" href="{{route('informasi')}}">Informasi</a>
+      <a class="btn btn-link" href="{{route('daftar')}}">Daftar</a>
      
     </div>
   

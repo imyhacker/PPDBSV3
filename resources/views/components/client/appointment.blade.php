@@ -18,13 +18,13 @@ data-wow-delay="0.1s" >
       <div class="bg-white rounded p-3 mt-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
          
-          <h5 class="text-white mb-0 mt-2 mb-2">Rina : 62 897-8971-643</h5>
+          <h5 class="text-white mb-0 mt-2 mb-2">Agus : +62 895-6191-33321</h5>
         </div>
       </div>
       <div class="bg-white rounded p-3 mt-3">
         <div class="d-flex align-items-center bg-primary rounded p-3">
          
-          <h5 class="text-white mb-0 mt-2 mb-2">Ari : -</h5>
+          <h5 class="text-white mb-0 mt-2 mb-2">Ari : +62 851-5536-1211</h5>
         </div>
       </div>
     </div>
