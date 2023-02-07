@@ -260,7 +260,7 @@ class AdminController extends Controller
     public function upload_foto(Request $req)
     {
         $file = $req->file('foto');
-        $nama_file = 'foto_'.date('d_m_y_s').'_.'.$file->getClientOriginalExtension();
+        $nama_file = 'foto_'.date('d_m_y H:i:s').'_.'.$file->getClientOriginalExtension();
         $path = 'galeri';
         $file->move($path, $nama_file);
 
