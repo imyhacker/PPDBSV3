@@ -59,9 +59,6 @@ class ClientController extends Controller
     {
         $req->validate([
             'gelombang' => 'required',
-            'nik' => 'required',
-            'hobi' => 'required',
-            'cita' => 'required',
             'jenis_kelamin' => 'required',
             'nama_ayah' => 'required',
             'status_ayah' => 'required',

@@ -47,9 +47,6 @@ class AdminController extends Controller
     {
         $req->validate([
             'gelombang' => 'required',
-            'nik' => 'required',
-            'hobi' => 'required',
-            'cita' => 'required',
             'nama_ayah' => 'required',
             'status_ayah' => 'required',
             'jenis_kelamin' => 'required',
