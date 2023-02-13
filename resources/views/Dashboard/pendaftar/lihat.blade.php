@@ -22,6 +22,11 @@
                             <td>{{$data->nama_siswa}}</td>
                         </tr>
                         <tr>
+                          <td>NIK</td>
+                          <td>:</td>
+                          <td>{{$data->nik ?? '-'}}</td>
+                      </tr>
+                        <tr>
                             <td>Gelombang</td>
                             <td>:</td>
                             <td>{{$data->gelombang}}</td>
@@ -46,6 +51,11 @@
                             <td>:</td>
                             <td>{{$data->jurusan}}</td>
                         </tr>
+                        <tr>
+                          <td>Hobi & Cita Cita</td>
+                          <td>:</td>
+                          <td>{{$data->hobi ?? '-'}} , {{$data->cita ?? '-'}}</td>
+                      </tr>
                     </table>
                 </div>
               </div>
