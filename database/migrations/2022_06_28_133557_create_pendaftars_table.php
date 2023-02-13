@@ -21,14 +21,14 @@ return new class extends Migration
             
             // Data siswa
             $table->string('nama_siswa');
-            $table->bigInteger('nik');
+            $table->bigInteger('nik')->nullable();
             $table->string('tempat_lahir');
             $table->string('jenis_kelamin');
             $table->date('tanggal_lahir');
             $table->string('asal_sekolah');
             $table->string('agama');
-            $table->string('hobi');
-            $table->string('cita');
+            $table->string('hobi')->nullable();
+            $table->string('cita')->nullable();
 
             // Data ortu
             $table->string('nama_ayah');
