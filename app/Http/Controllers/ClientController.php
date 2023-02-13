@@ -23,7 +23,7 @@ class ClientController extends Controller
         $info = Informasi::orderBy('id', 'DESC')->limit(6)->get();
 
 
-        $jp = Pendaftar::where('acc', '0')->where('daful', '1')->count();
+        $jp = Pendaftar::where('acc', '0')->where('daful', '0')->count();
         $jt = Pendaftar::where('acc', '1')->where('daful', '1')->count();
         $jj = Jurusan::count();
 
