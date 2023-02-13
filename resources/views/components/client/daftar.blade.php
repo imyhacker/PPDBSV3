@@ -50,16 +50,13 @@
                         @enderror
                     </div>
                     <div class="col-md-12 mt-3">
-                        <label>Nomor Induk Kependudukan (NIK) Milik Siswa (Ada Di KK) <sup
-                                class="text-danger">*</sup></label>
+                        <label>Nomor Induk Kependudukan (NIK) Milik Siswa (Ada Di KK) </label>
                         <input type="number" maxlength="16"
                             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                            class="form-control @error('nik') is-invalid @enderror" placeholder="NIK Ada Di KK"
+                            class="form-control" placeholder="NIK Ada Di KK"
                             {{$form}} @if($gelombang==null) @elseif($gelombang->status_gelombang == 'Buka') name="nik"
                         @endif value="{{old('nik')}}">
-                        @error('nik')
-                        <div class="invalid-feedback">{{$message}}</div>
-                        @enderror
+                       
                     </div>
                     <div class="col-md-12 mt-3">
                         <label>Jenis Kelamin</label>
@@ -121,22 +118,18 @@
                         @enderror
                     </div>
                     <div class="col-md-12 mt-3">
-                        <label>Hobi <sup class="text-danger">*</sup></label>
-                        <input type="text" class="form-control @error('hobi') is-invalid @enderror" placeholder="Hobi"
+                        <label>Hobi</label>
+                        <input type="text" class="form-control" placeholder="Hobi"
                             {{$form}} @if($gelombang==null) @elseif($gelombang->status_gelombang == 'Buka') name="hobi"
                         @endif value="{{old('hobi')}}">
-                        @error('hobi')
-                        <div class="invalid-feedback">{{$message}}</div>
-                        @enderror
+                        
                     </div>
                     <div class="col-md-12 mt-3">
-                        <label>Cita Cita <sup class="text-danger">*</sup></label>
-                        <input type="text" class="form-control @error('cita') is-invalid @enderror"
+                        <label>Cita Cita</label>
+                        <input type="text" class="form-control"
                             placeholder="Cita Cita" {{$form}} @if($gelombang==null) @elseif($gelombang->status_gelombang
                         == 'Buka') name="cita" @endif value="{{old('cita')}}">
-                        @error('cita')
-                        <div class="invalid-feedback">{{$message}}</div>
-                        @enderror
+                       
                     </div>
 
                     <div class="col-md-12 mt-3">
