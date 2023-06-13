@@ -58,7 +58,15 @@
             'pdfHtml5'
         ]
     });
-    $('#belum_daful').DataTable();
+    $('#belum_daful').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
+        ]
+    });
     $('#sudah_daful').DataTable();
     $('#data_sekolah').DataTable();
     $('#data_foto').DataTable();
