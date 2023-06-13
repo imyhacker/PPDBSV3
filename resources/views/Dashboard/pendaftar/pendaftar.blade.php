@@ -100,6 +100,7 @@
                                             <th>NIK Siswa</th>
                                             <th>TTL</th>
                                             <th>Agama</th>
+                                            <th>Rekomendasi</th>
                                             <th>Asal Sekolah</th>
                                             <th>Hobi</th>
                                             <th>Cita Cita</th>
@@ -122,6 +123,7 @@
                                             <td>{{$dc->nik}}</td>
                                             <td>{{$dc->tempat_lahir}}, {{$dc->tanggal_lahir}}</td>
                                             <td>{{$dc->agama}}</td>
+                                            <td>{{$dc->rekomendasi}}</td>
                                             <td>{{$dc->asal_sekolah}}</td>
                                             <td>{{$dc->hobi}}</td>
                                             <td>{{$dc->cita}}</td>
@@ -170,6 +172,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Lengkap</th>
+                                            <th>Rekomendasi</th>
                                             <th>Daftar Ulang</th>
                                         </tr>
                                     </thead>
@@ -179,7 +182,8 @@
                                         <tr>
                                             <td>{{$no++}}</td>
                                             <td>{{$ddf->nama_siswa}}</td>
-                                           
+                                            <td>{{$ddf->rekomendasi}}</td>
+
 
                                             <td>
                                                 <a href="{{route('daful', $ddf->id)}}" class="btn btn-sm btn-block btn-outline-success"><i class="fas fa-check"></i></a>
@@ -204,6 +208,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Lengkap</th>
+                                            <th>Rekomendasi</th>
                                             <th>Download</th>
                                         </tr>
                                     </thead>
@@ -213,7 +218,8 @@
                                         <tr>
                                             <td>{{$no++}}</td>
                                             <td>{{$ddfu->nama_siswa}}</td>
-                                           
+                                            <td>{{$ddfu->rekomendasi}}</td>
+
 
                                             <td>
                                                 <a href="{{route('download', $ddfu->id)}}" class="btn btn-sm btn-block btn-outline-success"><i class="fas fa-download"></i></a>
