@@ -101,6 +101,9 @@
                                             <th>TTL</th>
                                             <th>Agama</th>
                                             <th>Rekomendasi</th>
+                                            <th>Telfon Ayah</th>
+                                            <th>Telfon Ibu</th>
+                                            <th>Telfon Siswa</th>
                                             <th>Asal Sekolah</th>
                                             <th>Hobi</th>
                                             <th>Cita Cita</th>
@@ -124,6 +127,9 @@
                                             <td>{{$dc->tempat_lahir}}, {{$dc->tanggal_lahir}}</td>
                                             <td>{{$dc->agama}}</td>
                                             <td>{{$dc->rekomendasi}}</td>
+                                            <td>{{$dc->hp_ayah}}</td>
+                                            <td>{{$dc->hp_ibu}}</td>
+                                            <td>{{$dc->hp_siswa}}</td>
                                             <td>{{$dc->asal_sekolah}}</td>
                                             <td>{{$dc->hobi}}</td>
                                             <td>{{$dc->cita}}</td>
