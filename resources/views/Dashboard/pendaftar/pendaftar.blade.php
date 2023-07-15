@@ -216,7 +216,7 @@
                             </div>
                             <div class="card-body table-responsive">
 
-                                <table class="table" id="dapo">
+                                <table class="table" id="sudah_daful">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -256,7 +256,7 @@
                             </div>
                             <div class="card-body table-responsive">
 
-                                <table class="table" id="belum_daful">
+                                <table class="table" id="dapo">
                                     <thead>
                                         <tr>
                                             <th>No</th>
