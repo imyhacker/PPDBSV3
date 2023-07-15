@@ -265,28 +265,32 @@
                                             <th>NIK</th>
                                             <th>Nama Ayah</th>
                                             <th>Nama Ibu</th>
-                                            <th>Asal Sekolah</th>
+                                            <th>Asal Sekolha</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @php $no = 1; @endphp
-                                        @foreach($sudah_daful as $dapo)
+                                        @foreach($sudah_daful as $dpo)
                                         <tr>
                                             <td>{{$no++}}</td>
-                                            <td>{{$dapo->nama_siswa}}</td>
-                                            <td>{{$dapo->tempat_lahir}}, {{$dc->tanggal_lahir}}</td>
-                                            <td>{{$dapo->nik}}</td>
-                                            <td>{{$dapo->nama_ayah}}</td>
-                                            <td>{{$dapo->nama_ibu}}</td>
-                                            <td>{{$dapo->asal_sekolah}}</td>
+                                            <td>{{$dpo->nama_siswa}}</td>
+                                            <td>{{$dpo->tempat_lahir}}, {{$dpo->tanggal_lahir}}</td>
+                                            <td>{{$dpo->nik}}</td>
+                                            <td>{{$dpo->nama_ayah}}</td>
+                                            <td>{{$dpo->nama_ibu}}</td>
+                                            <td>{{$dpo->asal_sekolah}}</td>
 
-                                            <td </tr> @endforeach </tbody> </table> </div> </div> </div> </div> <!-- END
-                                                OF CENTER CONTENT -->
+                                        </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
+
                             </div>
+
+
                         </div>
                     </div>
+                    
                 </div>
         
         </section>
