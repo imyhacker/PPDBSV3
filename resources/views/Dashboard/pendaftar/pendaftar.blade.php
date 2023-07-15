@@ -216,7 +216,7 @@
                             </div>
                             <div class="card-body table-responsive">
 
-                                <table class="table" id="sudah_daful">
+                                <table class="table" id="dapo">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -288,12 +288,11 @@
                         </div>
                     </div>
                 </div>
+        
+        </section>
 
-
-            </section>
-
-        </div>
-        <x-dcore.footer />
     </div>
+    <x-dcore.footer />
+</div>
 </div>
 <x-dcore.script />
