@@ -39,13 +39,15 @@
                                             <td>
                                                 <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                                     id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                                                   Option
+                                                    Option
                                                 </a>
 
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                                     <a class="dropdown-item" href="{{route('acc', $dp->id)}}">ACC</a>
-                                                    <a class="dropdown-item" href="{{route('lihat', $dp->id)}}">Lihat</a>
-                                                    <a class="dropdown-item" href="{{route('hapus_siswa', $dp->id)}}">Hapus</a>
+                                                    <a class="dropdown-item"
+                                                        href="{{route('lihat', $dp->id)}}">Lihat</a>
+                                                    <a class="dropdown-item"
+                                                        href="{{route('hapus_siswa', $dp->id)}}">Hapus</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -73,7 +75,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <input type="submit" class="btn btn-primary mt-2 btn-block" value="Acc Gelombang">
+                                        <input type="submit" class="btn btn-primary mt-2 btn-block"
+                                            value="Acc Gelombang">
                                     </div>
                                 </form>
                             </div>
@@ -92,7 +95,7 @@
                                 <h4>Data Sudah Di ACC</h4>
                             </div>
                             <div class="card-body table-responsive">
-                            <table class="table" id="data_acc">
+                                <table class="table" id="data_acc">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -142,12 +145,14 @@
                                             <td>
                                                 <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                                     id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                                                   Option
+                                                    Option
                                                 </a>
 
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <a class="dropdown-item" href="{{route('lihat', $dc->id)}}">Lihat</a>
-                                                    <a class="dropdown-item" href="{{route('hapus_siswa', $dc->id)}}">Hapus</a>
+                                                    <a class="dropdown-item"
+                                                        href="{{route('lihat', $dc->id)}}">Lihat</a>
+                                                    <a class="dropdown-item"
+                                                        href="{{route('hapus_siswa', $dc->id)}}">Hapus</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -173,7 +178,7 @@
                             </div>
                             <div class="card-body table-responsive">
 
-                            <table class="table" id="belum_daful">
+                                <table class="table" id="belum_daful">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -192,7 +197,9 @@
 
 
                                             <td>
-                                                <a href="{{route('daful', $ddf->id)}}" class="btn btn-sm btn-block btn-outline-success"><i class="fas fa-check"></i></a>
+                                                <a href="{{route('daful', $ddf->id)}}"
+                                                    class="btn btn-sm btn-block btn-outline-success"><i
+                                                        class="fas fa-check"></i></a>
                                             </td>
                                         </tr>
                                         @endforeach
@@ -209,7 +216,7 @@
                             </div>
                             <div class="card-body table-responsive">
 
-                            <table class="table" id="sudah_daful">
+                                <table class="table" id="sudah_daful">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -228,7 +235,9 @@
 
 
                                             <td>
-                                                <a href="{{route('download', $ddfu->id)}}" class="btn btn-sm btn-block btn-outline-success"><i class="fas fa-download"></i></a>
+                                                <a href="{{route('download', $ddfu->id)}}"
+                                                    class="btn btn-sm btn-block btn-outline-success"><i
+                                                        class="fas fa-download"></i></a>
                                             </td>
                                         </tr>
                                         @endforeach
@@ -238,53 +247,47 @@
                             </div>
 
 
-                            </div>
                         </div>
                     </div>
-
                     <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Data Untuk Dapodik</h4>
-                            </div>
-                            <div class="card-body table-responsive">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Data Untuk Dapodik</h4>
+                        </div>
+                        <div class="card-body table-responsive">
 
                             <table class="table" id="belum_daful">
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nama Lengkap</th>
-                                            <th>TTL</th>
-                                            <th>NIK</th>
-                                            <th>Nama Ayah</th>
-                                            <th>Nama Ibu</th>
-                                            <th>Asal Sekolah</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @php $no = 1; @endphp
-                                        @foreach($sudah_daful as $dapo)
-                                        <tr>
-                                            <td>{{$no++}}</td>
-                                            <td>{{$dapo->nama_siswa}}</td>
-                                            <td>{{$dapo->tempat_lahir}}, {{$dc->tanggal_lahir}}</td>
-                                            <td>{{$dapo->nik}}</td>
-                                            <td>{{$dapo->nama_ayah}}</td>
-                                            <td>{{$dapo->nama_ibu}}</td>
-                                            <td>{{$dapo->asal_sekolah}}</td>
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Lengkap</th>
+                                        <th>TTL</th>
+                                        <th>NIK</th>
+                                        <th>Nama Ayah</th>
+                                        <th>Nama Ibu</th>
+                                        <th>Asal Sekolah</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @php $no = 1; @endphp
+                                    @foreach($sudah_daful as $dapo)
+                                    <tr>
+                                        <td>{{$no++}}</td>
+                                        <td>{{$dapo->nama_siswa}}</td>
+                                        <td>{{$dapo->tempat_lahir}}, {{$dc->tanggal_lahir}}</td>
+                                        <td>{{$dapo->nik}}</td>
+                                        <td>{{$dapo->nama_ayah}}</td>
+                                        <td>{{$dapo->nama_ibu}}</td>
+                                        <td>{{$dapo->asal_sekolah}}</td>
 
-                                            <td
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-
-                            </div>
+                                        <td </tr> @endforeach </tbody> </table> </div> </div> </div> </div> <!-- END OF
+                                            CENTER CONTENT -->
                         </div>
                     </div>
                 </div>
-                <!-- END OF CENTER CONTENT -->
+                </div>
 
+              
             </section>
 
         </div>
