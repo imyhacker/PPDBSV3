@@ -245,6 +245,55 @@
                 <!-- END OF CENTER CONTENT -->
 
             </section>
+
+            <section class="section">
+                <!-- MAIN OF CENTER CONTENT -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Data Untuk Dapodik</h4>
+                            </div>
+                            <div class="card-body table-responsive">
+
+                            <table class="table" id="belum_daful">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>TTL</th>
+                                            <th>NIK</th>
+                                            <th>Nama Ayah</th>
+                                            <th>Nama Ibu</th>
+                                            <th>Asal Sekolah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @php $no = 1; @endphp
+                                        @foreach($sudah_daful as $dapo)
+                                        <tr>
+                                            <td>{{$no++}}</td>
+                                            <td>{{$dapo->nama_siswa}}</td>
+                                            <td>{{$dapo->tempat_lahir}}, {{$dc->tanggal_lahir}}</td>
+                                            <td>{{$dapo->nik}}</td>
+                                            <td>{{$dapo->nama_ayah}}</td>
+                                            <td>{{$dapo->nama_ibu}}</td>
+                                            <td>{{$dapo->asal_sekolah}}</td>
+
+                                            <td
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <!-- END OF CENTER CONTENT -->
+
+            </section>
         </div>
         <x-dcore.footer />
     </div>
