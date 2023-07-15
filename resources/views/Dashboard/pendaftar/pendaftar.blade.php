@@ -241,14 +241,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- END OF CENTER CONTENT -->
 
-            </section>
-
-            <section class="section">
-                <!-- MAIN OF CENTER CONTENT -->
-                <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
@@ -289,11 +282,11 @@
                             </div>
                         </div>
                     </div>
-                  
                 </div>
                 <!-- END OF CENTER CONTENT -->
 
             </section>
+
         </div>
         <x-dcore.footer />
     </div>
